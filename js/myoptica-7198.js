@@ -821,7 +821,7 @@
             this.update_spotify(e),
             i.$body.hasClass("narrow") && this.upscale_images(e),
             o.fadeTo(300, 1),
-            this.hide_loader()),
+            this.hide_loader(),
             n && n.length > 0 && window.Tumblr.LikeButton.get_status_by_post_ids(n),
             window.ga && window.ga("send", "pageview", {
                 page: "/page/" + this.next_page_number,
