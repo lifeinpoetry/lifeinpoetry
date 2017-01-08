@@ -790,7 +790,7 @@
             var t = this.is_grid_layout ? 1.25 : 3;
             return i.$doc.height() - this.$el.scrollTop() < this.$el.height() * t
         },
-        _near_top: function() {
+        _near_masonfunction() {
             return !!(i.$win.scrollTop() < 50)
         },
         _slender: function() {
