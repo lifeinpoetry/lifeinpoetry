@@ -21,6 +21,7 @@
     i.fn.smartresize = function(t) {
         return t ? this.bind("smartresize", t) : this.trigger("smartresize", ["execAsap"])
     }
+    },
     i.fn.imagesLoaded = function(t) {
         function s() {
             t.call(n, o)
