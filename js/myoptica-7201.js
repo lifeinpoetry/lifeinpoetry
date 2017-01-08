@@ -21,59 +21,6 @@
     i.fn.smartresize = function(t) {
         return t ? this.bind("smartresize", t) : this.trigger("smartresize", ["execAsap"])
     }
-    ,
-    i.Mason = function(t, s) {
-        this.element = i(s),
-        this._create(t),
-        this._init()
-    }
-    ,
-    i.Mason.settings = {
-        isResizable: !0,
-        isAnimated: !1,
-        animationOptions: {
-            queue: !1,
-            duration: 500
-        },
-        gutterWidth: 0,
-        isRTL: !1,
-        isFitWidth: !1,
-        containerStyle: {
-            position: "relative"
-        }
-    },
-    i.Mason.prototype = {
-        _filterFindBricks: function(t) {
-        },
-        _getBricks: function(t) {
-        },
-        _create: function(s) {
-        },
-        _init: function(t) {
-        },
-        option: function(t, s) {
-        },
-        layout: function(t, i) {
-        },
-        _getColumns: function() {
-        },
-        _placeBrick: function(t) {
-        },
-        resize: function() {
-        },
-        _reLayout: function(t) {
-        },
-        reloadItems: function() {
-        },
-        reload: function(t) {
-        },
-        appended: function(t, i, s) {
-        },
-        _appended: function(t, i) {
-        },
-        destroy: function() {
-        }
-    },
     i.fn.imagesLoaded = function(t) {
         function s() {
             t.call(n, o)
@@ -101,8 +48,6 @@
     var o = function(i) {
         t.console && t.console.error(i)
     };
-    i.fn.masonry = function(t) {
-    }
 }(window, jQuery);
 !function(t, i) {
     var s = {
@@ -790,7 +735,7 @@
             var t = this.is_grid_layout ? 1.25 : 3;
             return i.$doc.height() - this.$el.scrollTop() < this.$el.height() * t
         },
-        _near_masonfunction() {
+        _near_top: function() {
             return !!(i.$win.scrollTop() < 50)
         },
         _slender: function() {
@@ -818,16 +763,6 @@
             }, this)),
             t("#posts > div").append(o),
             this.updateMedia(e),
-            i.GRID_LAYOUT && this.is_grid_layout || i.$body.hasClass("following-page") ? o.imagesLoaded(t.proxy(function() {
-                e.iframesLoaded({
-                    selector: ".post-content iframe"
-                }, t.proxy(function() {
-                    this.config.$target.masonry("appended", o, !0),
-                    this.loading_data = !1,
-                    this.animate_posts(o),
-                    this.hide_loader()
-                }, this))
-            }, this)) : (this.loading_data = !1,
             this.update_spotify(e),
             i.$body.hasClass("narrow") && this.upscale_images(e),
             o.fadeTo(300, 1),
@@ -853,10 +788,6 @@
             }, 250, t.proxy(function() {
                 this.animating = !1
             }, this)))
-        },
-        set_masonry: function() {
-        },
-        set_related_posts_masonry: function() {
         },
         animate_posts: function(i) {
             i.first().fadeTo(250, 1),
