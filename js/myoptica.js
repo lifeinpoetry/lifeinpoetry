@@ -91,8 +91,9 @@
         layout: function(t, i) {
             for (var s = 0, e = t.length; s < e; s++)
                 this._placeBrick(t[s]);
-            var n = {height: 'auto'};
-            if (this.options.isFitWidth) {
+            var n = {};
+            if (n.height = Math.max.apply(Math, this.colYs),
+            this.options.isFitWidth) {
                 var o = 0;
                 for (s = this.cols; --s && 0 === this.colYs[s]; )
                     o++;
@@ -256,7 +257,6 @@
             this.description_color(),
             t(".header-image").length && this.load_header(),
             Function("/*@cc_on return document.documentMode===10@*/")() && i.$body.addClass("ie10"),
-            this.init_related_posts_cta(),
             this.init_no_likes_text(),
             this.init_no_posts_text(),
             this.init_no_following_text()
@@ -482,7 +482,7 @@
             if (o.length > 0) {
                 o.text(e.text),
                 o.attr("data-cta-variant", e.variant);
-                var n = this.supports_app_nag ? 2 : 10;
+                var n = 2;
                 t(".related-posts article:nth-child(n+" + (n + 1) + ")").remove()
             }
         },
@@ -986,7 +986,6 @@
             this.$html = t("html"),
             this.$header = t("#header"),
             this.$posts = t("#posts"),
-            this.$relatedPosts = t(".related-posts")
         },
         animate: function() {
             this.go_to_position && !this.animating && (this.animating = !0,
@@ -1013,20 +1012,6 @@
             this.is_grid_layout = !0
         },
         set_related_posts_masonry: function() {
-            var i = this.$relatedPosts
-              , s = i.find("article");
-            i.imagesLoaded(t.proxy(function() {
-                i.iframesLoaded({
-                    selector: ".post-content iframe"
-                }, t.proxy(function() {
-                    i.masonry({
-                        itemSelector: "article",
-                        isFitWidth: !0
-                    }),
-                    this.animate_posts(s)
-                }, this))
-            }, this)),
-            this.related_posts_is_grid = !0
         },
         animate_posts: function(i) {
             i.first().fadeTo(250, 1),
@@ -1051,22 +1036,6 @@
             this.animate()
         },
         set_body_type: function() {
-            this._slender() && !i.$body.hasClass("following-page") ? (i.$body.addClass("slender").removeClass("grid"),
-            i.GRID_LAYOUT && this.is_grid_layout && (this.config.$target.css({
-                width: "auto"
-            }),
-            this.config.$target.masonry("destroy"),
-            this.is_grid_layout = !1),
-            this.$relatedPosts.removeClass("grid"),
-            this.related_posts_is_grid && (this.$relatedPosts.css({
-                width: "auto"
-            }),
-            this.$relatedPosts.masonry("destroy"),
-            this.related_posts_is_grid = !1)) : (i.$body.removeClass("slender"),
-            (i.GRID_LAYOUT && i.$body.hasClass("index-page") || i.$body.hasClass("following-page")) && (i.$body.addClass("grid"),
-            this.set_masonry()),
-            i.$body.hasClass("display-related-posts") && i.$body.hasClass("permalink") && (this.$relatedPosts.addClass("grid"),
-            this.set_related_posts_masonry()))
         },
         update_body: function() {
             this._near_top() ? (i.$body.addClass("top"),
@@ -1217,20 +1186,6 @@
             ignore: ".more_notes_link"
         }),
         "#notes" === document.location.hash && t("#posts .post-notes").click());
-        var o = function(s, e) {
-            var o = e.containerEl
-              , n = t("#posts, .related-posts");
-            n.each(function() {
-                var s = t(this)
-                  , e = Array.prototype.slice.call(this.classList);
-                s.hasClass("masonry") && o && s.masonry("appended", o, !0),
-                e.indexOf("related-posts") > -1 && !i.Utils.is_touch_device() && o.css("margin", "0 15px 30px")
-            }),
-            o.css("opacity", 1)
-        }
-          , n = function() {
-            e.related_posts_is_grid && e.set_related_posts_masonry()
-        };
         window.Optica.$win.on("lrec_ads_placeholder_inserted", o),
         window.Optica.$win.on("lrec_ads_loaded", n),
         i.NotesPager.init()
