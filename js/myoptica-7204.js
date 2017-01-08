@@ -1,3 +1,60 @@
+var Optica = {};
+Optica.ENDLESS_SCROLLING = true;
+Optica.LAYOUT = "regular";
+Optica.GRID_LAYOUT = (Optica.LAYOUT === "'grid");
+Optica.TITLE_COLOR = "#444444";
+Optica.ACCENT_COLOR = "#529ECC";
+Optica.BACKGROUND_COLOR = "#FAFAFA";
+Optica.RELATED_POSTS_CTA_VARIANTS = [
+    {
+        variant: "C",
+        text: "See the rest of this Tumblr"
+    },
+    {
+        variant: "D",
+        text: "See 311test311's whole Tumblr"
+    },
+    {
+        variant: "E",
+        text: "You scrolled this far. Check out the rest."
+    }
+];
+Optica.NO_LIKES_VARIANTS = [
+    "This Tumblr hasn't liked any posts yet.",
+    "This Tumblr doesn't like anything…yet.",
+    "No likes! Sheesh!",
+    "Amazing! This Tumblr doesn't like anything.",
+    "Incredible! This Tumblr doesn't like anything.",
+    "Neat! This Tumblr doesn't like anything.",
+    "Apparently this Tumblr is hard to please.",
+    "Wow! This Tumblr hasn't liked anything ever.",
+    "This Tumblr hasn't liked anything yet. How very intriguing.",
+    "This Tumblr has never met a post it didn't not like."
+];
+Optica.NO_POSTS_VARIANTS = [
+    "This Tumblr hasn't made any posts.",
+    "This silly Tumblr hasn't posted anything yet.",
+    "This Tumblr is cool, but empty.",
+    "This Tumblr is content-free.",
+    "This minimalist Tumblr has no posts.",
+    "Meditate for a while on this empty Tumblr.",
+    "Posts? Nah.",
+    "This Tumblr has hardly any posts. \nNone at all, in fact.",
+    "This Tumblr hasn't posted anything."
+];
+Optica.NO_FOLLOWING_VARIANTS = [
+    "This Tumblr hasn't followed any other Tumblrs.",
+    "Aw. This Tumblr isn't following anyone.",
+    "Nope, this Tumblr doesn't follow anyone.",
+    "This cool Tumblr doesn't follow anyone.",
+    "This far-out Tumblr doesn't follow anyone.",
+    "This fiercely independent Tumblr doesn't follow anyone.",
+    "This Tumblr doesn't follow anything except for its own rules.",
+    "This Tumblr doesn't really \"follow\" anything."
+];
+
+window.Optica = Optica;
+
 !function(t, i, s) {
     "use strict";
     var e, n = i.event;
@@ -987,36 +1044,8 @@
             }, this)));
         },
         set_masonry: function() {
-            var i = t("#posts")
-              , s = i.find("article, .blog-card");
-            i.imagesLoaded(t.proxy(function() {
-                i.iframesLoaded({
-                    selector: ".post-content iframe"
-                }, t.proxy(function() {
-                    i.masonry({
-                        itemSelector: "article, .blog-card",
-                        isFitWidth: !0
-                    }),
-                    this.animate_posts(s);
-                }, this));
-            }, this)),
-            this.is_grid_layout = !0;
         },
         set_related_posts_masonry: function() {
-            var i = this.$relatedPosts
-              , s = i.find("article");
-            i.imagesLoaded(t.proxy(function() {
-                i.iframesLoaded({
-                    selector: ".post-content iframe"
-                }, t.proxy(function() {
-                    i.masonry({
-                        itemSelector: "article",
-                        isFitWidth: !0
-                    }),
-                    this.animate_posts(s);
-                }, this));
-            }, this)),
-            this.related_posts_is_grid = !0;
         },
         animate_posts: function(i) {
             i.first().fadeTo(250, 1),
@@ -1041,22 +1070,6 @@
             this.animate();
         },
         set_body_type: function() {
-            this._slender() && !i.$body.hasClass("following-page") ? (i.$body.addClass("slender").removeClass("grid"),
-            i.GRID_LAYOUT && this.is_grid_layout && (this.config.$target.css({
-                width: "auto"
-            }),
-            this.config.$target.masonry("destroy"),
-            this.is_grid_layout = !1),
-            this.$relatedPosts.removeClass("grid"),
-            this.related_posts_is_grid && (this.$relatedPosts.css({
-                width: "auto"
-            }),
-            this.$relatedPosts.masonry("destroy"),
-            this.related_posts_is_grid = !1)) : (i.$body.removeClass("slender"),
-            (i.GRID_LAYOUT && i.$body.hasClass("index-page") || i.$body.hasClass("following-page")) && (i.$body.addClass("grid"),
-            this.set_masonry()),
-            i.$body.hasClass("display-related-posts") && i.$body.hasClass("permalink") && (this.$relatedPosts.addClass("grid"),
-            this.set_related_posts_masonry()));
         },
         update_body: function() {
             this._near_top() ? (i.$body.addClass("top"),
@@ -1207,20 +1220,6 @@
             ignore: ".more_notes_link"
         }),
         "#notes" === document.location.hash && t("#posts .post-notes").click());
-        var o = function(s, e) {
-                var o = e.containerEl
-              , n = t("#posts, .related-posts");
-                n.each(function() {
-                    var s = t(this)
-                      , e = Array.prototype.slice.call(this.classList);
-                    s.hasClass("masonry") && o && s.masonry("appended", o, !0),
-                    e.indexOf("related-posts") > -1 && !i.Utils.is_touch_device() && o.css("margin", "0 15px 30px");
-                }),
-                o.css("opacity", 1);
-            }
-            , n = function() {
-                e.related_posts_is_grid && e.set_related_posts_masonry();
-            };
         window.Optica.$win.on("lrec_ads_placeholder_inserted", o),
         window.Optica.$win.on("lrec_ads_loaded", n),
         i.NotesPager.init();
