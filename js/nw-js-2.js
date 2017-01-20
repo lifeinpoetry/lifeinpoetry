@@ -3,26 +3,13 @@
             init: function() {
                 this.globals(),
                     this.devices(),
-                    this.like_button(),
-                    this.in_iframe(),
-                    this.like_button(),
-                    this.link_color(),
-                    this.description_color(),
-                    t(".header-image").length && this.load_header(),
-                    Function("/*@cc_on return document.documentMode===10@*/")() && i.$body.addClass("ie10"),
-                    this.init_related_posts_cta(),
-                    this.init_no_likes_text(),
-                    this.init_no_posts_text(),
-                    this.init_no_following_text();
+                    Function("/*@cc_on return document.documentMode===10@*/")() && i.$body.addClass("ie10");
             },
             globals: function() {
                 i.$win = t(window),
                     i.$doc = t(document),
                     i.$body = t("body"),
                     i.$win_body = t("html, body");
-            },
-            in_iframe: function() {
-                window.self !== window.top && i.$body.addClass("iframe");
             },
             is_touch_device: function() {
                 return !!("ontouchstart" in window) || !!window.navigator.msMaxTouchPoints;
@@ -336,26 +323,6 @@
         _get_window_bounds: function() {
             this.window_height = i.$win.height();
         },
-        _get_post_bounds: function(i) {
-            return t.data(i[0], "offsets");
-        },
-        _set_post_bounds: function(i) {
-            var s = i.offset().top,
-                e = i.outerHeight(),
-                o = s + e;
-            return t.data(i[0], "offsets", {
-                top: s,
-                height: e,
-                bottom: o
-            });
-        },
-        _in_view: function(t) {
-            var s, e = i.$win.scrollTop();
-            this.window_height = this.window_height || i.$win.height();
-            var o = e + this.window_height;
-            return s = this._get_post_bounds(t),
-                s || (s = this._set_post_bounds(t)), !(s.bottom + this.window_height < e || s.top > o + this.window_height);
-        },
         _snooze: function(t) {
             t.addClass("snooze");
         },
@@ -363,7 +330,7 @@
             t.removeClass("snooze");
         },
         _near_bottom: function() {
-            var t = this.is_grid_layout ? 1.25 : 3;
+            var t =  3;
             return i.$doc.height() - this.$el.scrollTop() < this.$el.height() * t;
         },
         _near_top: function() {
@@ -376,10 +343,7 @@
             this.hide_loader(!0);
         },
         cache_selectors: function() {
-            this.$html = t("html"),
-                    this.$header = t("#header"),
-                    this.$posts = t("#posts"),
-                    this.$relatedPosts = t(".related-posts");
+            this.$html = t("html");
         },
         animate: function() {
             this.go_to_position && !this.animating && (this.animating = !0,
@@ -393,13 +357,6 @@
             this.$el.on("Eventor:scroll", t.proxy(this.__window_scroll, this)),
                     this.$el.on("resize orientationchange", t.proxy(this._debounce(this.__window_resize, this.config.resizeDelay), this)),
                     i.$doc.on("keydown", t.proxy(this.__document_keydown, this));
-        },
-        hide_loader: function(t) {
-            t,
-                    this.config.$loader.removeClass("animate");
-        },
-        show_loader: function() {
-            this.config.$loader.addClass("animate");
         }
     },
     c.instances = [],
@@ -416,12 +373,8 @@
     i.Utils = s,
     i.Eventor = o,
     i.Popmenu = h,
-    i.Parallaxer = a,
-    i.Drawer = n,
-    i.Pager = c,
     t(function() {
-        i.Utils.init(),
-            i.Eventor.init();
+        i.Eventor.init();
         var s = t("body");
         t("#page").popmenu();
     });
