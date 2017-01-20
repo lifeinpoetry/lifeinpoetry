@@ -3,7 +3,17 @@
             init: function() {
                 this.globals(),
                     this.devices(),
-                    Function("/*@cc_on return document.documentMode===10@*/")() && i.$body.addClass("ie10");
+                    this.like_button(),
+                    this.in_iframe(),
+                    this.like_button(),
+                    this.link_color(),
+                    this.description_color(),
+                    t(".header-image").length && this.load_header(),
+                    Function("/*@cc_on return document.documentMode===10@*/")() && i.$body.addClass("ie10"),
+                    this.init_related_posts_cta(),
+                    this.init_no_likes_text(),
+                    this.init_no_posts_text(),
+                    this.init_no_following_text();
             },
             globals: function() {
                 i.$win = t(window),
@@ -16,28 +26,6 @@
             },
             is_touch_device: function() {
                 return !!("ontouchstart" in window) || !!window.navigator.msMaxTouchPoints;
-            },
-            like_button: function() {
-                t("#posts, .related-posts").on("mouseenter touchstart", ".like_button", function(i) {
-                    var s = t(i.currentTarget);
-                    s.hasClass("liked") || s.addClass("interacted");
-                });
-            },
-            link_color: function() {
-                var t = i.Utils.hex_to_hsv(i.ACCENT_COLOR),
-                    s = i.Utils.hex_to_hsv(i.BACKGROUND_COLOR);
-                t.s < .2 && t.v > .8 && (i.$body.addClass("light-accent"),
-                        s.s < .2 && s.v > .8 && i.$body.addClass("light-on-light")),
-                    t.v < .2 && s.v < .2 && i.$body.addClass("dark-on-dark");
-            },
-            description_color: function() {
-                var s = t(".title-group .description");
-                if (s.length) {
-                    var e = i.Utils.hex_to_rgb(i.TITLE_COLOR);
-                    s.css({
-                        color: "rgba(" + e.r + "," + e.g + "," + e.b + ", 0.7)"
-                    });
-                }
             },
             devices: function() {
                 var s = navigator.userAgent;
@@ -87,110 +75,6 @@
                     setTimeout(function() {
                         document.location.href = s;
                     }, 1e3);
-            },
-            rgb_to_hex: function(t, i, s) {
-                return "#" + ((1 << 24) + (t << 16) + (i << 8) + s).toString(16).slice(1);
-            },
-            hex_to_rgb: function(t) {
-                t = (t + "").replace(/[^0-9a-f]/gi, ""),
-                    t.length < 6 && (t = t[0] + t[0] + t[1] + t[1] + t[2] + t[2]);
-                var i = "([a-f\\d]{2})",
-                    s = new RegExp("^#?" + i + i + i + "$", "i").exec(t);
-                return s ? {
-                    r: parseInt(s[1], 16),
-                    g: parseInt(s[2], 16),
-                    b: parseInt(s[3], 16)
-                } : null;
-            },
-            rgb_to_hsv: function(t, i, s) {
-                var e = Math.min(Math.min(t, i), s),
-                    o = Math.max(Math.max(t, i), s),
-                    n = o - e,
-                    a = {
-                        h: 6,
-                        s: o ? (o - e) / o : 0,
-                        v: o / 255
-                    };
-                return n ? o === t ? a.h += (i - s) / n : o === i ? a.h += 2 + (s - t) / n : a.h += 4 + (t - i) / n : a.h = 0,
-                    a.h = 60 * a.h % 360,
-                    a;
-            },
-            hsv_to_rgb: function(t, i, s) {
-                var e, o, n;
-                if (i) {
-                    e = o = n = 0;
-                    var a = (t + 360) % 360 / 60,
-                        r = s * i,
-                        h = s - r,
-                        l = r * (1 - Math.abs(a % 2 - 1));
-                    a < 1 ? (e = r,
-                            o = l) : a < 2 ? (e = l,
-                            o = r) : a < 3 ? (o = r,
-                            n = l) : a < 4 ? (o = l,
-                            n = r) : a < 5 ? (n = r,
-                            e = l) : (n = l,
-                            e = r),
-                        e += h,
-                        o += h,
-                        n += h;
-                } else
-                    e = o = n = s;
-                return {
-                    r: Math.round(255 * e),
-                    g: Math.round(255 * o),
-                    b: Math.round(255 * n)
-                };
-            },
-            hex_to_hsv: function(s) {
-                s = (s + "").replace(/[^0-9a-f]/gi, ""),
-                    s.length < 6 && (s = s[0] + s[0] + s[1] + s[1] + s[2] + s[2]);
-                var e = i.Utils.hex_to_rgb(s),
-                    o = t.map(e, function(t) {
-                        return t;
-                    }),
-                    n = i.Utils.rgb_to_hsv.apply(i.Utils, o);
-                return n;
-            },
-            hsv_to_hex: function(s, e, o) {
-                var n = i.Utils.hsv_to_rgb(s, e, o),
-                    a = t.map(n, function(t) {
-                        return t;
-                    }),
-                    r = i.Utils.rgb_to_hex.apply(i.Utils, a);
-                return r;
-            },
-            hex_brightness: function(t, i) {
-                t = String(t).replace(/[^0-9a-f]/gi, ""),
-                    t.length < 6 && (t = t[0] + t[0] + t[1] + t[1] + t[2] + t[2]),
-                    i = i || 0;
-                var s, e, o, n = parseInt(t, 16),
-                    a = i < 0 ? 0 : 255,
-                    r = i < 0 ? -i : i,
-                    h = n >> 16,
-                    l = n >> 8 & 255,
-                    c = 255 & n;
-                return s = Math.round((a - h) * r) + h,
-                    e = Math.round((a - l) * r) + l,
-                    o = Math.round((a - c) * r) + c,
-                    "#" + (16777216 + 65536 * s + 256 * e + o).toString(16).slice(1);
-            },
-            init_no_likes_text: function() {
-                var s = i.NO_LIKES_VARIANTS,
-                    e = s[Math.floor(Math.random() * s.length)],
-                    o = t(".likes-no-likes.content");
-                o.length > 0 && o.text(e);
-            },
-            init_no_posts_text: function() {
-                var s = i.NO_POSTS_VARIANTS,
-                    e = s[Math.floor(Math.random() * s.length)],
-                    o = t(".posts-no-posts.content");
-                o.length > 0 && o.text(e);
-            },
-            init_no_following_text: function() {
-                var s = i.NO_FOLLOWING_VARIANTS,
-                    e = s[Math.floor(Math.random() * s.length)],
-                    o = t(".following-no-following.content");
-                o.length > 0 && o.text(e);
             }
         },
         e = function() {
