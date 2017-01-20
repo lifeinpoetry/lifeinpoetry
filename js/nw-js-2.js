@@ -370,7 +370,6 @@
     c.register = function(t) {
         this.instances.push(t);
     },
-    i.Utils = s,
     i.Eventor = o,
     i.Popmenu = h,
     t(function() {
