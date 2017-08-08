@@ -1,3 +1,11 @@
+WebFont.load({
+    google: {
+      families: [
+        'Open Sans:400,300,300italic,400italic:latin,latin-ext'
+      ]
+    }
+});
+
 (function($) {
     if ( $("meta[property='og:description']").length )
     {
