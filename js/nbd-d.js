@@ -73,7 +73,7 @@
 
             $("title").text( completeJsHeadline );
 
-            $(".blog-title").replaceWith($("<h2 class='blog-title'>" + headElement.html() + "</h2>"));
+            $(".blog-title").replaceWith($("<h2 class='blog-title'>" + $("h1.source").text() + "</h2>"));
         }
     } else {
         if ( $("article.text").length  )
