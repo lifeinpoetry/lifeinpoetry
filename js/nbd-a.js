@@ -46,7 +46,7 @@
         $('h1.source').html ( $.trim( $('h1.source').html().replace( /^\s*(?:<br\s*\/?\s*>)+|(?:<br\s*\/?\s*>)+\s*$/gi, '' ) ) );
 
         var htmlJsHeadline = $('h1.source').html();
-        htmlJsHeadline = htmlJsHeadline.replace( ',<\/b> from', ',<\/b>').replace( ',” published in', ',”');
+        htmlJsHeadline = htmlJsHeadline.replace( ',<\/strong> from', ',<\/strong>').replace( ',” published in', ',”');
 
         var jsHeadline = $.trim( he.decode(  $( '<div>' + htmlJsHeadline + '<\/div>' ).text() ) );
 
@@ -87,7 +87,7 @@
                     $('article h1.new-headline').html( $.trim( $('h1.source').html().replace( /^\s*(?:<br\s*\/?\s*>)+|(?:<br\s*\/?\s*>)+\s*$/gi, '' ) ) );
 
                     var htmlJsHeadline = $('article h1.new-headline').html();
-                    htmlJsHeadline = htmlJsHeadline.replace( ',<\/b> from', ',<\/b>').replace( ',” published in', ',”');
+                    htmlJsHeadline = htmlJsHeadline.replace( ',<\/strong> from', ',<\/strong>').replace( ',” published in', ',”');
 
                     var jsHeadline = $.trim( he.decode(  $( '<div>' + htmlJsHeadline + '<\/div>' ).text() ) );
                     
