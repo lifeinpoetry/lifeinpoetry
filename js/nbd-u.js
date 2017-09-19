@@ -270,7 +270,7 @@ WebFont.load({
         });
     });
     
-     $( ".nav-menu > ul > li > a.open:not( .selected )" ).click(function(e) {
+     $( ".nav-menu > ul > li > a.open" ).not("selected").click(function(e) {
         e.preventDefault();
         $(".pop-menu:visible").hide(250);
         $( ".pop-menu" ).removeClass( "pop-add" );
@@ -285,7 +285,7 @@ WebFont.load({
         e.preventDefault();
         $(".pop-menu:visible").hide(150);
         $( ".pop-menu" ).removeClass( "pop-add" );
-         $( this ).removeClass( "selected" );
+        $( this ).removeClass( "selected" );
     });
     
 
