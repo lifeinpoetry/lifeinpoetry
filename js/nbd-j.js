@@ -272,7 +272,7 @@ WebFont.load({
     
     $( ".nav-menu > ul > li > a.open" ).click(function(e) {
         e.preventDefault();
-        $( this ).parents("li").child("ul").show( "slow", function() {
+        $( this ).parents("li").children("ul").show( "slow", function() {
         });
     });
     
