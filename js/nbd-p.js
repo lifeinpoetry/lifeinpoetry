@@ -270,6 +270,14 @@ WebFont.load({
         });
     });
     
+    $( ".nav-menu > ul > li > a.open.selected" ).click(function(e) {
+        e.preventDefault();
+        $( this ).removeClass( "selected" );
+        $( this ).parents("li").children("ul").hide( "slow", function() {
+                $( this ).removeClass( "pop-add" );
+        });
+    });
+    
     $( ".nav-menu > ul > li > a.open:not( .selected )" ).click(function(e) {
         e.preventDefault();
         $(".pop-menu:visible").hide(150);
