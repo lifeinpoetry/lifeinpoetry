@@ -281,7 +281,7 @@ WebFont.load({
         } else {
             e.preventDefault();
             $( this ).addClass( "selected" );
-            var doPopup = $( this ).parent( "li" ).children( "pop-menu" );
+            var doPopup = $( this ).parent( "li" ).children( ".pop-menu" );
             doPopup.show(500);
             doPopup.addClass( "pop-add" );
         }
