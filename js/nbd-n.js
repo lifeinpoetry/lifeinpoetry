@@ -281,7 +281,7 @@ WebFont.load({
     $(document).mouseup(function (e) {
         var popup = $(".pop-menu:visible");
 
-        if (!$(".nav-menu > ul > li > a.open").is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
+        if (!popup.is(e.target) && popup.has(e.target).length == 0) {
             popup.hide(500);
             popup.removeClass( "pop-add" );
         }
