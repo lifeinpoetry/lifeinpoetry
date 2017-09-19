@@ -326,11 +326,11 @@ WebFont.load({
         newscroll = mywindow.scrollTop();
 
         if (newscroll > mypos && ( ( newscroll - mypos) > 10 ) && !up) {
-            $(".pop-menu:visible").stop().slideToggle();
+            $(".pop-menu:visible").stop().hide();
             $(".share-menu:visible").stop().slideToggle();
             up = !up;
         } else if(newscroll < mypos && ( ( mypos - newscroll ) > 10 ) && up) {
-            $(".pop-menu:visible").stop().slideToggle();
+            $(".pop-menu:visible").stop().hide();
             $(".share-menu:visible").stop().slideToggle();
             up = !up;
         }
