@@ -273,7 +273,7 @@ WebFont.load({
      $(document).click(function (e) {
         var popup = $(".pop-menu:visible");
 
-        if ( !$( "#sidebar-two a.open.selected" ).is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
+        if ( !$( "#sidebar-two a.open" ).is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
             popup.hide(500);
             popup.removeClass( "pop-add" );
             $( "a.open.selected" ).removeClass( "selected" );
@@ -282,7 +282,7 @@ WebFont.load({
             popup.hide(500);
             popup.removeClass( "pop-add" );
             $( "a.open.selected" ).removeClass( "selected" );
-        } else if ( $( "#sidebar-two a.open:not(.selected)" ).is(e.target)  ) {
+        } else if ( $( "#sidebar-two a.open" ).is(e.target)  ) {
             e.preventDefault();
             $(".pop-menu:visible").hide(250);
             $( ".pop-menu" ).removeClass( "pop-add" );
