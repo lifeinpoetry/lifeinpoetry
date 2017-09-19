@@ -287,6 +287,16 @@ WebFont.load({
         }
     });
 
+    $(document).mouseup(function (e) {
+        var popup = $(".pop-menu:visible");
+
+        if ( !$("#sidebar-two a.open").is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
+            popup.hide(500);
+            popup.removeClass( "pop-add" );
+            $("#sidebar-two a.open").removeClass( "selected" );
+        }
+    });
+
     $( ".post-controls .control .share" ).click(function(e) {
         e.preventDefault();
         var articlePop = $( this ).parents("article");
