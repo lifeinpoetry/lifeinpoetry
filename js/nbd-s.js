@@ -284,9 +284,8 @@ WebFont.load({
     $( ".nav-menu > ul > li > a.open.selected" ).click(function(e) {
         e.preventDefault();
         $( this ).removeClass( "selected" );
-        $( this ).parents("li").children("ul").hide( "slow", function() {
-                $( this ).removeClass( "pop-add" );
-        });
+        $(".pop-menu:visible").hide(150);
+        $( ".pop-menu" ).removeClass( "pop-add" );
     });
     
 
