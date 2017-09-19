@@ -284,8 +284,6 @@ WebFont.load({
             $( "a.open.selected" ).removeClass( "selected" );
         } else if ( $( "#sidebar-two a.open" ).is(e.target)  ) {
             e.preventDefault();
-            $(".pop-menu:visible").hide(250);
-            $( ".pop-menu" ).removeClass( "pop-add" );
             $( this ).addClass( "selected" );
             $( this ).parents("li").children("ul").show( "slow", function() {
                     $( this ).addClass( "pop-add" );
