@@ -270,7 +270,7 @@ WebFont.load({
         });
     });
     
-     $( ".nav-menu > ul > li > a.open" ).not("selected").click(function(e) {
+     $( ".nav-menu > ul > li > a.open" ).not(".selected").click(function(e) {
         e.preventDefault();
         $(".pop-menu:visible").hide(250);
         $( ".pop-menu" ).removeClass( "pop-add" );
