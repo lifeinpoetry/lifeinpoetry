@@ -270,14 +270,15 @@ WebFont.load({
         });
     });
     
-    $( "#sidebar-two a.selected" ).click(function(e) {
+    $( "#sidebar-two a.open.selected" ).click(function(e) {
         e.preventDefault();
-        $(".pop-add:visible").hide(150);
-        $( ".pop-add" ).removeClass( "pop-add" );
+        $(".pop-menu:visible").hide(150);
+        $( ".pop-menu" ).removeClass( "pop-add" );
+        $( this ).removeClass( "selected" );
     });
     
     
-     $( "#sidebar-two a.open" ).not(".selected").click(function(e) {
+     $( "#sidebar-two a.open:not(.selected)").click(function(e) {
         e.preventDefault();
         $(".pop-menu:visible").hide(250);
         $( ".pop-menu" ).removeClass( "pop-add" );
