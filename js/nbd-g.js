@@ -269,6 +269,21 @@ WebFont.load({
             }
         });
     });
+    
+    $( ".nav-menu > ul > a.share" ).click(function(e) {
+        e.preventDefault();
+        $( this ).parents("li").child("ul").show( "slow", function() {
+        });
+    });
+    
+    $(document).mouseup(function (e) {
+        var popup = $(".pop-menu:visible");
+
+        if (!$(".nav-menu > ul > a.share").is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
+            popup.hide(500);
+        }
+    });
+
 
     $( ".post-controls .control .share" ).click(function(e) {
         e.preventDefault();
@@ -299,9 +314,11 @@ WebFont.load({
         newscroll = mywindow.scrollTop();
 
         if (newscroll > mypos && ( ( newscroll - mypos) > 10 ) && !up) {
+            $(".pop-menu:visible").stop().slideToggle();
             $(".share-menu:visible").stop().slideToggle();
             up = !up;
         } else if(newscroll < mypos && ( ( mypos - newscroll ) > 10 ) && up) {
+            $(".pop-menu:visible").stop().slideToggle();
             $(".share-menu:visible").stop().slideToggle();
             up = !up;
         }
