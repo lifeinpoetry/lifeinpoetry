@@ -281,8 +281,9 @@ WebFont.load({
         } else {
             e.preventDefault();
             $( this ).addClass( "selected" );
-            popup.show(500);
-            popup.addClass( "pop-add" );
+            var doPopup = $( $this ).parent( "li" ).children( "pop-menu" );
+            doPopup.show(500);
+            doPopup.addClass( "pop-add" );
         }
     });
 
