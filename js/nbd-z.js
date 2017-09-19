@@ -270,10 +270,10 @@ WebFont.load({
         });
     });
     
-    $( "#sidebar-two a.open.selected" ).click(function(e) {
+    $( "#sidebar-two a.selected" ).click(function(e) {
         e.preventDefault();
-        $(".pop-menu:visible").hide(150);
-        $( ".pop-menu" ).removeClass( "pop-add" );
+        $(".pop-add:visible").hide(150);
+        $( ".pop-add" ).removeClass( "pop-add" );
         $( this ).removeClass( "selected" );
     });
     
@@ -295,7 +295,7 @@ WebFont.load({
         if ( !popup.is(e.target) && popup.has(e.target).length == 0) {
             popup.hide(500);
             popup.removeClass( "pop-add" );
-            $( ".nav-menu > ul > li > a.open.selected" ).removeClass( "selected" );
+            $( "#sidebar-two a.open.selected" ).removeClass( "selected" );
         }
     });
     
