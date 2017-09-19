@@ -273,16 +273,16 @@ WebFont.load({
      $("#sidebar-two a.open").click(function (e) {
         var popup = $(".pop-menu:visible");
 
-        if ( $( "#sidebar-two a.open.selected" ).is(e.target) ) {
+        if ( $( this ).hasClass( "selected" ) ) {
             e.preventDefault();
             popup.hide(500);
             popup.removeClass( "pop-add" );
             $( this ).removeClass( "selected" );
-        } else if ( $( "#sidebar-two a.open" ).is(e.target)  ) {
+        } else {
             e.preventDefault();
             $( this ).addClass( "selected" );
             popup.show(500);
-            popup.removeClass( "pop-add" );
+            popup.addClass( "pop-add" );
         }
     });
 
