@@ -273,6 +273,7 @@ WebFont.load({
     $( ".nav-menu > ul > li > a.open" ).click(function(e) {
         e.preventDefault();
         $( this ).parents("li").children("ul").show( "slow", function() {
+                $( this ).addClass( "pop-add" );
         });
     });
     
@@ -281,6 +282,7 @@ WebFont.load({
 
         if (!$(".nav-menu > ul > li > a.open").is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
             popup.hide(500);
+            popup.removeClass( "pop-add" );
         }
     });
 
