@@ -270,32 +270,26 @@ WebFont.load({
         });
     });
     
-    $( "#sidebar-two a.open.selected" ).click(function(e) {
-        e.preventDefault();
-        $(".pop-menu:visible").hide( "slow", function() {
-            $( ".pop-menu" ).removeClass( "pop-add" );
-            $( "a.open.selected" ).removeClass( "selected" );
-        });
-    });
-    
-    
-     $( "#sidebar-two a.open:not(.selected)").click(function(e) {
-        e.preventDefault();
-        $(".pop-menu:visible").hide(250);
-        $( ".pop-menu" ).removeClass( "pop-add" );
-        $( this ).addClass( "selected" );
-        $( this ).parents("li").children("ul").show( "slow", function() {
-                $( this ).addClass( "pop-add" );
-        });
-    });       
-    
      $(document).click(function (e) {
         var popup = $(".pop-menu:visible");
 
         if ( !$( "#sidebar-two a.open.selected" ).is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
             popup.hide(500);
             popup.removeClass( "pop-add" );
-            $( "#sidebar-two a.open.selected" ).removeClass( "selected" );
+            $( "a.open.selected" ).removeClass( "selected" );
+        } else if ( $( "#sidebar-two a.open.selected" ).is(e.target) ) {
+            e.preventDefault();
+            popup.hide(500);
+            popup.removeClass( "pop-add" );
+            $( "a.open.selected" ).removeClass( "selected" );
+        } elseif ( $( "#sidebar-two a.open:not(.selected)" ).is(e.target)  ) {
+            e.preventDefault();
+            $(".pop-menu:visible").hide(250);
+            $( ".pop-menu" ).removeClass( "pop-add" );
+            $( this ).addClass( "selected" );
+            $( this ).parents("li").children("ul").show( "slow", function() {
+                    $( this ).addClass( "pop-add" );
+            });
         }
     });
 
