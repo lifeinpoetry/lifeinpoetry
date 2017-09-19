@@ -270,24 +270,19 @@ WebFont.load({
         });
     });
     
-     $(document).click(function (e) {
+     $("#sidebar-two a.open").click(function (e) {
         var popup = $(".pop-menu:visible");
 
-        if ( !$( "#sidebar-two a.open" ).is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
-            popup.hide(500);
-            popup.removeClass( "pop-add" );
-            $( "a.open.selected" ).removeClass( "selected" );
-        } else if ( $( "#sidebar-two a.open.selected" ).is(e.target) ) {
+        if ( $( "#sidebar-two a.open.selected" ).is(e.target) ) {
             e.preventDefault();
             popup.hide(500);
             popup.removeClass( "pop-add" );
-            $( "a.open.selected" ).removeClass( "selected" );
+            $( this ).removeClass( "selected" );
         } else if ( $( "#sidebar-two a.open" ).is(e.target)  ) {
             e.preventDefault();
             $( this ).addClass( "selected" );
-            $( this ).parents("li").children("ul").show( "slow", function() {
-                    $( this ).addClass( "pop-add" );
-            });
+            popup.show(500);
+            popup.removeClass( "pop-add" );
         }
     });
 
