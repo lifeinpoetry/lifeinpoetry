@@ -272,6 +272,7 @@ WebFont.load({
     
     $( ".nav-menu > ul > li > a.open" ).click(function(e) {
         e.preventDefault();
+        $(".pop-menu:visible").hide(150);
         $( this ).parents("li").children("ul").show( "slow", function() {
                 $( this ).addClass( "pop-add" );
         });
@@ -285,6 +286,8 @@ WebFont.load({
             popup.removeClass( "pop-add" );
         }
     });
+    
+       
 
 
     $( ".post-controls .control .share" ).click(function(e) {
