@@ -274,7 +274,7 @@ WebFont.load({
         e.preventDefault();
         $(".pop-menu:visible").hide(150);
         $( ".pop-menu" ).removeClass( "pop-add" );
-        $( this ).removeClass( "selected" );
+        $( "a.open.selected" ).removeClass( "selected" );
     });
     
     
