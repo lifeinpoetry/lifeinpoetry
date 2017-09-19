@@ -270,9 +270,10 @@ WebFont.load({
         });
     });
     
-    $( ".nav-menu > ul > li > a.open" ).click(function(e) {
+    $( ".nav-menu > ul > li > a.open:not( .selected )" ).click(function(e) {
         e.preventDefault();
         $(".pop-menu:visible").hide(150);
+        $( this ).addClass( "selected" );
         $( this ).parents("li").children("ul").show( "slow", function() {
                 $( this ).addClass( "pop-add" );
         });
@@ -281,9 +282,10 @@ WebFont.load({
     $(document).mouseup(function (e) {
         var popup = $(".pop-menu:visible");
 
-        if (!popup.is(e.target) && popup.has(e.target).length == 0) {
+        if ( !$( ".nav-menu > ul > li > a.open.selected" ).is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
             popup.hide(500);
             popup.removeClass( "pop-add" );
+            $( ".nav-menu > ul > li > a.open.selected" ).removeClass( "selected" );
         }
     });
     
