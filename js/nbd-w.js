@@ -270,7 +270,15 @@ WebFont.load({
         });
     });
     
-     $( ".nav-menu > ul > li > a.open" ).not(".selected").click(function(e) {
+    $( "#sidebar-two a.open.selected" ).click(function(e) {
+        e.preventDefault();
+        $(".pop-menu:visible").hide(150);
+        $( ".pop-menu" ).removeClass( "pop-add" );
+        $( this ).removeClass( "selected" );
+    });
+    
+    
+     $( "#sidebar-two a.open" ).not(".selected").click(function(e) {
         e.preventDefault();
         $(".pop-menu:visible").hide(250);
         $( ".pop-menu" ).removeClass( "pop-add" );
@@ -279,20 +287,12 @@ WebFont.load({
                 $( this ).addClass( "pop-add" );
         });
     });
-    
-    
-    $( ".nav-menu > ul > li > a.open.selected" ).click(function(e) {
-        e.preventDefault();
-        $(".pop-menu:visible").hide(150);
-        $( ".pop-menu" ).removeClass( "pop-add" );
-        $( this ).removeClass( "selected" );
-    });
-    
+   
 
     $(document).mouseup(function (e) {
         var popup = $(".pop-menu:visible");
 
-        if ( !$( ".nav-menu > ul > li > a.open.selected" ).is(e.target) && !popup.is(e.target) && popup.has(e.target).length == 0) {
+        if ( !popup.is(e.target) && popup.has(e.target).length == 0) {
             popup.hide(500);
             popup.removeClass( "pop-add" );
             $( ".nav-menu > ul > li > a.open.selected" ).removeClass( "selected" );
