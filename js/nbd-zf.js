@@ -282,7 +282,7 @@ WebFont.load({
             popup.hide(500);
             popup.removeClass( "pop-add" );
             $( "a.open.selected" ).removeClass( "selected" );
-        } elseif ( $( "#sidebar-two a.open:not(.selected)" ).is(e.target)  ) {
+        } else if ( $( "#sidebar-two a.open:not(.selected)" ).is(e.target)  ) {
             e.preventDefault();
             $(".pop-menu:visible").hide(250);
             $( ".pop-menu" ).removeClass( "pop-add" );
