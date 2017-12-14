@@ -2178,7 +2178,7 @@ body.is-scrolling #posts * {
   border: 0;
   font-weight: 400;
   font-style: normal;
-  font-size: 16.25px;
+  font-size: 16.25px !important;
   letter-spacing: .01em;
   line-height: 1.9em;
   margin: 0;
