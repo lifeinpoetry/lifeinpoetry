@@ -1,6 +1,4 @@
 (function($) {
-    $("p").parent().is("p").unwrap();
-    
     if ( $("meta[property='og:description']").length )
     {
         $("meta[property='og:description']").attr("content", $("meta[property='og:description']").attr("content").replace(/<br>|\n/g, " &#47; ") );
@@ -354,4 +352,6 @@
     });
 
     $( "html" ).attr("lang", "en");
+    
+    $("p").find("p").unwrap();
 })(window.jQuery);
