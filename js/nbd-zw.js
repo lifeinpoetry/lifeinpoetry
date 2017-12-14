@@ -355,6 +355,7 @@
     
    function unwrap_p(){
       $("p").find("p").unwrap();
+      $("p:empty").remove();
    };
    window.setTimeout( unwrap_p, 5000 ); // 5 seconds
 })(window.jQuery);
