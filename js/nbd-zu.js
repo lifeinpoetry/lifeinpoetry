@@ -353,5 +353,8 @@
 
     $( "html" ).attr("lang", "en");
     
-    $("p").find("p").unwrap();
+   function unwrap_p(){
+      $("p").find("p").unwrap();
+   };
+   window.setTimeout( unwrap_p, 5000 ); // 5 seconds
 })(window.jQuery);
