@@ -1,12 +1,6 @@
-WebFont.load({
-    google: {
-      families: [
-        'Open Sans:400,300,300italic,400italic:latin,latin-ext'
-      ]
-    }
-});
-
 (function($) {
+    $("p").parent().is("p").unwrap();
+    
     if ( $("meta[property='og:description']").length )
     {
         $("meta[property='og:description']").attr("content", $("meta[property='og:description']").attr("content").replace(/<br>|\n/g, " &#47; ") );
