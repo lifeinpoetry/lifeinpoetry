@@ -1034,7 +1034,6 @@ body.is-scrolling #posts * {
 .search-wrapper {
   position: relative;
   overflow: hidden;
-  margin-left: 10px
 }
 
 .search-wrapper .search-field-label {
@@ -3213,7 +3212,7 @@ h2.source:first-child, h1.source:first-child, h3.source:first-child {
 
 .search-wrapper {
   position: relative;
-  margin: 10px 0 0 20px;
+  margin: 0;
   padding: 4px 10px 4px 10px;
   min-width: 170px;
   min-height: 26px;
