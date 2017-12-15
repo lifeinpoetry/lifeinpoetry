@@ -1103,7 +1103,7 @@ body.is-scrolling #posts * {
   margin: 10px 10px 0
 }
 
-.nav-menu .nav-item .label {
+.nav-menu .nav-item.label {
   text-decoration: none;
   text-transform: lowercase;
   letter-spacing: 0.79px;
@@ -3362,10 +3362,6 @@ article a {
 
 .nav-menu .nav-item {
   padding: 6px 0
-}
-
-.nav-menu .nav-item .label:hover {
-  font-style: italic
 }
 
 iframe.tmblr-iframe {
