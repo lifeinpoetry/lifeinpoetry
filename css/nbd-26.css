@@ -3114,11 +3114,11 @@ figure.photoset {
 }
 
 .blog-mine-font-size-light {
-  font-size: 0.7em!important
+  font-size: 0.8em!important
 }
 
 body {
-  letter-spacing: 1px;
+  letter-spacing: .075em;
   font-weight: 300
 }
 
@@ -3764,10 +3764,10 @@ body.permalink article.text.blog-mine-font-size-11 .body-text h1 {
   width: 400px;
   text-align: center;
   font-style: italic;
-  font-variant: small-caps;
+  font-variant: all-petite-caps;
   line-height: 1.1;
   transition-duration: .5s;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .blog-mine-info a {
@@ -3780,7 +3780,6 @@ body.permalink article.text.blog-mine-font-size-11 .body-text h1 {
   width: 400px;
   text-align: center;
   text-transform: lowercase;
-  letter-spacing: 1px;
   font-weight: 300;
   font-style: normal;
   line-height: 170%;
