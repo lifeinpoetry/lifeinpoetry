@@ -980,10 +980,6 @@ body.is-scrolling #posts * {
 }
 
 .logo-wrapper {
-  padding-bottom: 20px;
-}
-
-.logo-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -3936,9 +3932,6 @@ body::-webkit-scrollbar {
   .search-wrapper {
     margin-left: 30px
   }
-  .logo-wrapper {
-    margin-top: 50px
-  }
   .nav-wrapper .inline-nav, .nav-menu .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
     min-width: 6em;
     max-width: 6em
@@ -3973,9 +3966,6 @@ body::-webkit-scrollbar {
   }
   .search-wrapper {
     margin-left: 30px
-  }
-  .logo-wrapper {
-    margin-top: 50px
   }
   .nav-wrapper .inline-nav, .nav-menu .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
     min-width: 4em;
