@@ -3106,7 +3106,7 @@ figure.photoset {
 }
 
 .blog-mine-font-size-11 {
-  font-size: 0.9333333333333333em!important
+  font-size: 1em!important
 }
 
 .blog-mine-font-size-13 {
@@ -3739,7 +3739,7 @@ body.permalink article.text.blog-mine-font-size-11 .body-text h1 {
 }
 
 .quote .post-content blockquote {
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 1.0833333333333333em;
   letter-spacing: .1em;
