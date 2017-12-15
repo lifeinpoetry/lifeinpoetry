@@ -4069,8 +4069,9 @@ body::-webkit-scrollbar {
     margin-left: 5px;
     margin-right: 5px;
   }
-  .post-controls .control {
-    font-size: 1em;
+  .post-controls .control > .pop > a,
+  .post-controls .control  > a {
+    font-size: 1.6em;
   }
   article .reblog_button {
     width: 16px;
