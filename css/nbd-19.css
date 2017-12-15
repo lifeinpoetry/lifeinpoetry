@@ -3562,11 +3562,12 @@ iframe.tmblr-iframe:hover {
   width: 262px;
   padding-left: 15px;
   font-size: 0.9333333333333333em;
-  line-height: 16px;
-  font-weight: 300;
+  line-height: 0.64em;
+  font-weight: 400;
   font-style: normal;
   box-sizing: border-box;
-  float: right
+  float: right;
+  font-size: 0.7em;
 }
 
 .permalink-form label {
