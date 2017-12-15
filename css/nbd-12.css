@@ -4070,7 +4070,7 @@ body::-webkit-scrollbar {
     margin-right: 5px;
   }
   .post-controls .control {
-    font-size: 1.0666666666666667em;
+    font-size: 1em;
   }
   article .reblog_button {
     width: 16px;
