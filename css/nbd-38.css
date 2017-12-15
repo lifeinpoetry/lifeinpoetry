@@ -2668,7 +2668,7 @@ figure.photoset {
     height: 250px
   }
   .blog-title {
-    font-size: 54px
+    font-size: 1.3333333333333333em
   }
 }
 
@@ -2728,7 +2728,7 @@ figure.photoset {
     margin-right: auto
   }
   .blog-title {
-    font-size: 36px;
+    font-size: 1em;
     margin-top: 30px
   }
   .avatar-hidden .blog-title {
@@ -3262,7 +3262,8 @@ h2.source:first-child, h1.source:first-child, h3.source:first-child {
   width: 100%;
   text-transform: lowercase;
   letter-spacing: 2px;
-  font-size: 32px
+  font-size: 1.8666666666666667em;
+  line-height: 1.2142857142857142;
 }
 
 .no-image.avatar-hidden #header, .no-image.avatar-style-hidden #header {
