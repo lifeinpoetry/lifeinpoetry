@@ -1098,12 +1098,12 @@ body.is-scrolling #posts * {
   text-align: center
 }
 
-.nav-wrapper .nav-item {
+.nav-menu .nav-item {
   display: inline-block;
   margin: 10px 10px 0
 }
 
-.nav-wrapper .nav-item .label {
+.nav-menu .nav-item .label {
   text-decoration: none;
   text-transform: lowercase;
   letter-spacing: 0.79px;
@@ -2744,7 +2744,7 @@ figure.photoset {
   .nav-wrapper .inline-nav {
     margin: 0
   }
-  .nav-wrapper .nav-item {
+  .nav-menu .nav-item {
     margin: 5px 7px 0
   }
   .blog-title+.description {
@@ -3304,7 +3304,7 @@ h2.source:first-child, h1.source:first-child, h3.source:first-child {
   box-sizing: border-box
 }
 
-.nav-wrapper .inline-nav, .nav-wrapper .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .pagination, body .blog-mine-sidebar .services {
+.nav-wrapper .inline-nav, .nav-menu .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .pagination, body .blog-mine-sidebar .services {
   min-width: 10em;
   max-width: 10em;
   box-sizing: border-box
@@ -3344,7 +3344,7 @@ article a {
   padding: 0
 }
 
-.services-service, .nav-wrapper .nav-item {
+.services-service, .nav-menu .nav-item {
   -ms-word-break: break-all;
   -epub-word-break: break-all;
   word-break: break-all;
@@ -3360,11 +3360,11 @@ article a {
   padding: 0
 }
 
-.nav-wrapper .nav-item {
+.nav-menu .nav-item {
   padding: 6px 0
 }
 
-.nav-wrapper .nav-item .label:hover {
+.nav-menu .nav-item .label:hover {
   font-style: italic
 }
 
@@ -3886,7 +3886,7 @@ body::-webkit-scrollbar {
     -ms-box-flex: 0;
     -moz-box-flex: 0
   }
-  .nav-wrapper .inline-nav, .nav-wrapper .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
+  .nav-wrapper .inline-nav, .nav-menu.nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
     min-width: 10em;
     max-width: 10em
   }
@@ -3903,7 +3903,7 @@ body::-webkit-scrollbar {
   .search-wrapper {
     padding-left: 20px
   }
-  .nav-wrapper .inline-nav, .nav-wrapper .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
+  .nav-wrapper .inline-nav, .nav-menu .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
     min-width: 9em;
     max-width: 9em
   }
@@ -3943,7 +3943,7 @@ body::-webkit-scrollbar {
   .logo-wrapper {
     margin-top: 50px
   }
-  .nav-wrapper .inline-nav, .nav-wrapper .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
+  .nav-wrapper .inline-nav, .nav-menu .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
     min-width: 6em;
     max-width: 6em
   }
@@ -3981,7 +3981,7 @@ body::-webkit-scrollbar {
   .logo-wrapper {
     margin-top: 50px
   }
-  .nav-wrapper .inline-nav, .nav-wrapper .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
+  .nav-wrapper .inline-nav, .nav-menu .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
     min-width: 4em;
     max-width: 4em
   }
@@ -3993,7 +3993,7 @@ body::-webkit-scrollbar {
     margin-right: 15px;
     box-sizing: border-box;
   }
-  .nav-wrapper .inline-nav, .nav-wrapper .nav-item, .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
+  .nav-wrapper .inline-nav, .nav-menu .nav-item, .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
     max-width: 5em;
   }
   #posts {
@@ -4048,7 +4048,7 @@ body::-webkit-scrollbar {
     min-width: 75px;
     max-width: 304px;
   }
-  .nav-wrapper .inline-nav, .nav-wrapper .nav-item, .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
+  .nav-wrapper .inline-nav, .nav-menu .nav-item, .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
     max-width: 3em;
   }
   .quote .post-content {
