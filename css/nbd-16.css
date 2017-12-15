@@ -1600,11 +1600,7 @@ body.is-scrolling #posts * {
   position: relative;
   text-align: left;
   vertical-align: middle;
-  margin-left: 4px
-}
-
-.post-controls .control > .pop > a,
-.post-controls .control > a {
+  margin-left: 4px;
   font-size: 1.6em;
 }
 
