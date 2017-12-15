@@ -1055,6 +1055,7 @@ body.is-scrolling #posts * {
 
 .search-wrapper .search-field {
   height: 54px;
+  
   color: inherit;
   border: 0;
   outline: 0;
@@ -1205,9 +1206,8 @@ body.is-scrolling #posts * {
 }
 
 .ablog-title-wrapper {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
+  margin: 0;
   padding: 0;
   position: relative;
   z-index: 2;
