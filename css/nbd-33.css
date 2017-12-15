@@ -357,7 +357,7 @@ body.android .install-banner, body.ios .install-banner {
   display: block
 }
 
-.link-wrapper .link-title:after, .logo-wrapper .search-wrapper .search-field-label:before, .pop-menu ul li a .arrow:before, .post-controls .control.share-control .share:before, .post-controls .like_button.liked.interacted:after, .post-controls .like_button.liked:before, .post-controls .like_button:before, .post-controls .reblog_button:before, .reblog-link .reblog-icon:before, .reblog-link .reblog_sm:before {
+.link-wrapper .link-title:after, .search-wrapper .search-field-label:before, .pop-menu ul li a .arrow:before, .post-controls .control.share-control .share:before, .post-controls .like_button.liked.interacted:after, .post-controls .like_button.liked:before, .post-controls .like_button:before, .post-controls .reblog_button:before, .reblog-link .reblog-icon:before, .reblog-link .reblog_sm:before {
   font-family: "optica-icons", "Blank";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1031,21 +1031,21 @@ body.is-scrolling #posts * {
   opacity: .25
 }
 
-.logo-wrapper .search-wrapper {
+.search-wrapper {
   position: relative;
   overflow: hidden;
   margin-left: 10px
 }
 
-.logo-wrapper .search-wrapper .search-field-label {
+.search-wrapper .search-field-label {
   display: block
 }
 
-.logo-wrapper .search-wrapper .search-field-label:before {
+.search-wrapper .search-field-label:before {
   content: "\EA09"
 }
 
-.logo-wrapper .search-wrapper .search-field-label::before {
+.search-wrapper .search-field-label::before {
   position: absolute;
   font-size: 1.9333333333333333em;
   color: inherit;
@@ -1054,7 +1054,7 @@ body.is-scrolling #posts * {
   top: 8px
 }
 
-.logo-wrapper .search-wrapper .search-field {
+.search-wrapper .search-field {
   height: 54px;
   color: inherit;
   border: 0;
@@ -1066,17 +1066,16 @@ body.is-scrolling #posts * {
   padding: 0 0 0 33px
 }
 
-.logo-wrapper .search-wrapper .search-field::-webkit-input-placeholder {
+.search-wrapper .search-field::-webkit-input-placeholder {
+  color: inherit;
+  text-overflow: ellipsis!important
+}
+.search-wrapper .search-field:-moz-placeholder, .search-wrapper .search-field::-moz-placeholder {
   color: inherit;
   text-overflow: ellipsis!important
 }
 
-.logo-wrapper .search-wrapper .search-field:-moz-placeholder, .logo-wrapper .search-wrapper .search-field::-moz-placeholder {
-  color: inherit;
-  text-overflow: ellipsis!important
-}
-
-.logo-wrapper .search-wrapper .search-field:-ms-input-placeholder {
+.search-wrapper .search-field:-ms-input-placeholder {
   color: inherit;
   text-overflow: ellipsis!important
 }
@@ -3206,13 +3205,13 @@ h2.source:first-child, h1.source:first-child, h3.source:first-child {
   padding-top: 25px
 }
 
-.logo-wrapper .search-wrapper .search-field-label {
+.search-field-label {
   margin-top: 6.5px;
   margin-bottom: 6.5px;
   height: 13px
 }
 
-.logo-wrapper .search-wrapper {
+.search-wrapper {
   position: relative;
   margin: 10px 0 0 20px;
   padding: 4px 10px 4px 10px;
@@ -3230,7 +3229,7 @@ h2.source:first-child, h1.source:first-child, h3.source:first-child {
   transition: .1s all linear
 }
 
-.logo-wrapper .search-wrapper .search-field {
+.search-wrapper .search-field {
   position: absolute;
   top: 11px;
   left: 15px;
@@ -3244,11 +3243,11 @@ h2.source:first-child, h1.source:first-child, h3.source:first-child {
   line-height: 0.8666666666666667
 }
 
-.logo-wrapper .search-wrapper .search-field-label:before {
+.search-wrapper .search-field-label:before {
   display: none
 }
 
-.logo-wrapper .search-wrapper .search-field-submit {
+.search-wrapper .search-field-submit {
   position: absolute;
   top: 11px;
   right: 5px;
@@ -3901,7 +3900,7 @@ body::-webkit-scrollbar {
     -ms-box-flex: 0;
     -moz-box-flex: 0
   }
-  .logo-wrapper .search-wrapper {
+  .search-wrapper {
     padding-left: 20px
   }
   .nav-wrapper .inline-nav, .nav-wrapper .nav-item .nav-wrapper .nav-menu, body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
@@ -3938,7 +3937,7 @@ body::-webkit-scrollbar {
     -ms-box-flex: 0;
     -moz-box-flex: 0
   }
-  .logo-wrapper .search-wrapper {
+  .search-wrapper {
     margin-left: 30px
   }
   .logo-wrapper {
@@ -3976,7 +3975,7 @@ body::-webkit-scrollbar {
   .no-image.avatar-hidden #header, .no-image.avatar-style-hidden #header {
     padding-top: 15px
   }
-  .logo-wrapper .search-wrapper {
+  .search-wrapper {
     margin-left: 30px
   }
   .logo-wrapper {
@@ -3986,7 +3985,7 @@ body::-webkit-scrollbar {
     min-width: 4em;
     max-width: 4em
   }
-  .logo-wrapper .search-wrapper {
+  .search-wrapper {
     margin-bottom: 10px;
   }
   body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
