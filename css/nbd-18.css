@@ -3574,7 +3574,8 @@ iframe.tmblr-iframe:hover {
   font-weight: 500;
   font-style: normal;
   float: left;
-  margin-top: 3px
+  margin-top: 3px;
+  font-size: 0.7em;
 }
 
 body .blog-mine-sidebar .description {
