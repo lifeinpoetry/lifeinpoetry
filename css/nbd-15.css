@@ -1603,6 +1603,11 @@ body.is-scrolling #posts * {
   margin-left: 4px
 }
 
+.post-controls .control > .pop > a,
+.post-controls .control > a {
+  font-size: 1.6em;
+}
+
 .post-controls .control .like_button, .post-controls .control .reblog_button, .post-controls .control .share {
   display: block;
   text-decoration: none;
@@ -4067,10 +4072,6 @@ body::-webkit-scrollbar {
   body .blog-mine-sidebar .description, body .blog-mine-sidebar .nav-wrapper, body .blog-mine-sidebar .services {
     margin-left: 5px;
     margin-right: 5px;
-  }
-  .post-controls .control > .pop > a,
-  .post-controls .control  > a {
-    font-size: 1.6em;
   }
   article .reblog_button {
     width: 16px;
