@@ -256,7 +256,7 @@ table {
 }
 
 .related-posts-wrapper>h2 {
-  font-size: 13px;
+  font-size: 0.8666666666666667em;
   margin: 27px 0;
   text-align: center;
   text-transform: uppercase
@@ -346,7 +346,7 @@ body.permalink #posts article {
   text-align: center;
   border: 0;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 1.0666666666666667em;
   font-weight: 700;
   text-decoration: none;
   margin-top: 20px;
@@ -533,7 +533,7 @@ body.android .install-banner, body.ios .install-banner {
 .blog-card .navigation h3 {
   color: #fff;
   float: left;
-  font-size: 14px;
+  font-size: 0.9333333333333333em;
   font-weight: 700;
   margin: 0 15px 0 10px;
   text-align: left
@@ -565,7 +565,7 @@ body.android .install-banner, body.ios .install-banner {
   box-shadow: none;
   cursor: pointer;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 0.8666666666666667em;
   line-height: 22px;
   font-weight: 700;
   text-decoration: none;
@@ -623,7 +623,7 @@ body.android .install-banner, body.ios .install-banner {
 }
 
 .blog-card .title {
-  font-size: 20px;
+  font-size: 1.3333333333333333em;
   margin: 0 0 5px;
   line-height: 1.2;
   word-wrap: break-word
@@ -632,7 +632,7 @@ body.android .install-banner, body.ios .install-banner {
 .blog-card .description {
   position: relative;
   line-height: 16px;
-  font-size: 12px;
+  font-size: 0.8em;
   margin-top: 0;
   margin-bottom: 5px;
   opacity: .7
@@ -717,13 +717,13 @@ body.android .install-banner, body.ios .install-banner {
 
 .ad .ad-header {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8666666666666667em;
   margin-bottom: 5px
 }
 
 .ad .ad-footer a {
   text-decoration: none;
-  font-size: 13px
+  font-size: 0.8666666666666667em
 }
 
 .ad .ad-wrapper {
@@ -897,7 +897,7 @@ br.clear, div.clear {
   background: 0;
   color: #444;
   display: block;
-  font-size: 14px;
+  font-size: 0.9333333333333333em;
   height: auto;
   margin: 0;
   padding: 6px 30px 6px 10px;
@@ -907,7 +907,7 @@ br.clear, div.clear {
 }
 
 .pop-menu ul li a .arrow {
-  font-size: 11px;
+  font-size: 0.7333333333333333em;
   position: absolute;
   right: 8px;
   top: 50%;
@@ -1047,7 +1047,7 @@ body.is-scrolling #posts * {
 
 .logo-wrapper .search-wrapper .search-field-label::before {
   position: absolute;
-  font-size: 29px;
+  font-size: 1.9333333333333333em;
   color: inherit;
   z-index: 2;
   left: 0;
@@ -1110,7 +1110,7 @@ body.is-scrolling #posts * {
   letter-spacing: 0.79px;
   color: rgba(43, 43, 43, 0.85);
   font-weight: 500;
-  font-size: 10.75px;
+  font-size: 0.7166666666666667em;
 }
 
 .header-image-wrapper {
@@ -1361,7 +1361,7 @@ body.is-scrolling #posts * {
 
 .post-header {
   display: none;
-  font-size: 14px;
+  font-size: 0.9333333333333333em;
   font-weight: 700;
   padding: 11px 15px;
   border-bottom: 1px solid #e7e7e7
@@ -1399,7 +1399,7 @@ body.is-scrolling #posts * {
 }
 
 .post-content h1, .post-content h2 {
-  font-size: 22px;
+  font-size: 1.4666666666666666em;
   line-height: 1.16
 }
 
@@ -1427,7 +1427,7 @@ body.is-scrolling #posts * {
 }
 
 .post-content h1.title, .post-content h2.title {
-  font-size: 36px
+  font-size: 2.4em
 }
 
 .post-content h1.title a, .post-content h2.title a {
@@ -1435,7 +1435,7 @@ body.is-scrolling #posts * {
 }
 
 .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
-  font-size: 15px;
+  font-size: 1em;
   font-weight: 700
 }
 
@@ -1490,7 +1490,7 @@ body.is-scrolling #posts * {
   margin-top: 0;
   background-color: #f7f7f7;
   color: #a1a1a1;
-  font-size: 12px;
+  font-size: 0.8em;
   text-align: left;
   padding: 5px 20px
 }
@@ -1600,7 +1600,7 @@ body.is-scrolling #posts * {
   position: relative;
   text-align: left;
   vertical-align: middle;
-  font-size: 24px;
+  font-size: 1.6em;
   margin-left: 4px
 }
 
@@ -1658,7 +1658,7 @@ body.is-scrolling #posts * {
   left: 50%;
   height: 48px;
   width: 48px;
-  font-size: 48px;
+  font-size: 3.2em;
   line-height: 1;
   margin-left: -24px;
   -webkit-animation: wiggle .6s ease-out;
@@ -1691,7 +1691,7 @@ body.is-scrolling #posts * {
   border-radius: 4px;
   color: #858585;
   display: block;
-  font-size: 16px;
+  font-size: 1.0666666666666667em;
   font-weight: 700;
   margin-bottom: 50px;
   text-align: center;
@@ -1791,7 +1791,7 @@ body.is-scrolling #posts * {
 }
 
 .inline-meta, .post-extra {
-  font-size: 14px
+  font-size: 0.9333333333333333em
 }
 
 .inline-meta .meta-item {
@@ -1839,7 +1839,7 @@ body.is-scrolling #posts * {
 
 .reblog-link .reblog_sm {
   vertical-align: sub;
-  font-size: 20px;
+  font-size: 1.3333333333333333em;
   margin-left: -5px
 }
 
@@ -1877,7 +1877,7 @@ body.is-scrolling #posts * {
 }
 
 .notes-wrapper .notes {
-  padding: 6px 13px;
+  padding: 6px 0.8666666666666667em;
   max-height: 69vh;
   overflow: scroll
 }
@@ -1914,8 +1914,8 @@ body.is-scrolling #posts * {
 .notes-wrapper-header {
   display: none;
   text-align: center;
-  padding: 10px 13px;
-  font-size: 18px;
+  padding: 10px 0.8666666666666667em;
+  font-size: 1.2em;
   font-weight: 700;
   border-bottom: 1px solid #eee
 }
@@ -1947,7 +1947,7 @@ body.is-scrolling #posts * {
 .notes li {
   color: #bdbdbd;
   color: rgba(90, 90, 90, .6);
-  font-size: 14px;
+  font-size: 0.9333333333333333em;
   padding: 14px 0 9px;
   border-top: 1px solid #eee
 }
@@ -2183,11 +2183,11 @@ body.is-scrolling #posts * {
 }
 
 .quote blockquote.medium {
-  font-size: 24px
+  font-size: 1.6em
 }
 
 .quote blockquote.long {
-  font-size: 18px
+  font-size: 1.2em
 }
 
 .quote .post-content blockquote:before {
@@ -2358,23 +2358,23 @@ figure.photoset {
 .link-wrapper .link-title:after {
   content: "\EA01";
   padding-left: 4px;
-  font-size: 16px;
+  font-size: 1.0666666666666667em;
   white-space: nowrap
 }
 
 .link-wrapper .link-host {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8666666666666667em;
   line-height: 1.2
 }
 
 .link-wrapper .link-excerpt {
-  font-size: 14px;
+  font-size: 0.9333333333333333em;
   line-height: 1.5
 }
 
 .link-wrapper .link-author {
-  font-size: 13px;
+  font-size: 0.8666666666666667em;
   line-height: 1.2;
   opacity: .5
 }
@@ -2817,17 +2817,17 @@ figure.photoset {
     display: block
   }
   .post-content .quote blockquote, .post-content h1, .post-content h2 {
-    font-size: 19px;
+    font-size: 1.2666666666666666em;
     margin: 15px 0
   }
   .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
     margin: 15px 0
   }
   .post-content h1.title, .post-content h2.title {
-    font-size: 25px
+    font-size: 1.6666666666666667em
   }
   .post-content blockquote {
-    padding-left: 13px
+    padding-left: 0.8666666666666667em
   }
   .post-content menu, .post-content ol, .post-content ul {
     padding-left: 20px
@@ -2862,7 +2862,7 @@ figure.photoset {
     display: none
   }
   .with-caption+.post-extra.has-source, .with-caption+.post-extra.has-tags {
-    margin-top: 13px!important
+    margin-top: 0.8666666666666667em!important
   }
   figure.photoset {
     margin-right: 0
@@ -2888,10 +2888,10 @@ figure.photoset {
     padding: .25em 0
   }
   .quote .post>blockquote {
-    font-size: 22px
+    font-size: 1.4666666666666666em
   }
   .quote blockquote.medium {
-    font-size: 18px
+    font-size: 1.2em
   }
   #pagination a {
     margin-bottom: 15px
@@ -2991,14 +2991,14 @@ figure.photoset {
 
 .app-nag .app-nag-ratings-text {
   color: #b4b4b4;
-  font-size: 13px;
+  font-size: 0.8666666666666667em;
   font-weight: 700
 }
 
 .app-nag .app-nag-callout {
   width: 100%;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.4666666666666666em;
   line-height: 1.16;
   color: #444;
   font-family: "Gibson", "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
@@ -3021,13 +3021,13 @@ figure.photoset {
   color: #fff;
   background-color: #529ecc;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 1.0666666666666667em;
   cursor: pointer
 }
 
 .app-nag .app-nag-app-store-deny {
   color: #9ba3ae;
-  font-size: 14px;
+  font-size: 0.9333333333333333em;
   margin-top: 10px
 }
 
@@ -3106,15 +3106,15 @@ figure.photoset {
 }
 
 .blog-mine-font-size-11 {
-  font-size: 11px!important
+  font-size: 0.8666666666666667em!important
 }
 
 .blog-mine-font-size-13 {
-  font-size: 13px!important
+  font-size: 1em!important
 }
 
 .blog-mine-font-size-light {
-  font-size: 10.5px!important
+  font-size: 0.7em!important
 }
 
 body {
@@ -3123,7 +3123,7 @@ body {
 }
 
 .post-content .title, h2:not(.blog-title):not(.new-headline):not(.source), .blog-mine-sub-title {
-  font-size: 16px;
+  font-size: 1.0666666666666667em;
   text-align: center;
   letter-spacing: 2px;
   font-weight: 600;
@@ -3140,7 +3140,7 @@ article .reblog_button {
 h3:not(.source):not(.new-headline), h4, h5, h6 {
   font-weight: 500;
   font-style: italic;
-  font-size: 14px
+  font-size: 0.9333333333333333em
 }
 
 h2.source:first-child, h1.source:first-child, h3.source:first-child {
@@ -3241,7 +3241,7 @@ h2.source:first-child, h1.source:first-child, h3.source:first-child {
   background: transparent;
   box-shadow: none;
   font-style: italic;
-  line-height: 13px
+  line-height: 0.8666666666666667
 }
 
 .logo-wrapper .search-wrapper .search-field-label:before {
@@ -3257,7 +3257,7 @@ h2.source:first-child, h1.source:first-child, h3.source:first-child {
   height: 13px;
   border: 0;
   background: 0;
-  line-height: 13px
+  line-height: 0.8666666666666667
 }
 
 .blog-title {
@@ -3517,7 +3517,7 @@ iframe.tmblr-iframe:hover {
 }
 
 .share-menu .lip-heading {
-  font-size: 12px;
+  font-size: 0.8em;
   line-height: 15px;
   font-weight: 700;
   font-style: normal;
@@ -3535,7 +3535,7 @@ iframe.tmblr-iframe:hover {
 }
 
 .share-menu ul li {
-  font-size: 13px;
+  font-size: 0.8666666666666667em;
   line-height: 25px;
   font-weight: 500;
   font-style: normal;
@@ -3561,7 +3561,7 @@ iframe.tmblr-iframe:hover {
   padding: 0 30px 0 10px;
   width: 262px;
   padding-left: 15px;
-  font-size: 14px;
+  font-size: 0.9333333333333333em;
   line-height: 16px;
   font-weight: 300;
   font-style: normal;
@@ -3570,7 +3570,7 @@ iframe.tmblr-iframe:hover {
 }
 
 .permalink-form label {
-  font-size: 13px;
+  font-size: 0.8666666666666667em;
   line-height: 25px;
   font-weight: 500;
   font-style: normal;
@@ -3628,7 +3628,7 @@ body .blog-mine-sidebar .description {
 
 #blog-mine-pagination .next, #blog-mine-pagination .previous {
   display: block;
-  font-size: 16px;
+  font-size: 1.0666666666666667em;
   font-weight: 700;
   margin-bottom: 50px;
   text-align: center;
@@ -3643,7 +3643,7 @@ body .blog-mine-sidebar .description {
 
 .pagination-middle .pagination-item {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.0666666666666667em;
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
@@ -3656,7 +3656,7 @@ body .blog-mine-sidebar .description {
 
 .pagination-middle .current {
   opacity: 1;
-  font-size: 17px
+  font-size: 1.1333333333333333em
 }
 
 .chat .conversation {
@@ -3678,7 +3678,7 @@ body .blog-mine-sidebar .description {
 .post-content blockquote {
   font-weight: 300;
   font-style: italic;
-  font-size: 13px
+  font-size: 0.8666666666666667em;
 }
 
 .quote .post-content>blockquote p:last-child {
@@ -3687,7 +3687,7 @@ body .blog-mine-sidebar .description {
 
 .post-content .tumblr_blog {
   font-style: normal;
-  font-size: 10.5px
+  font-size: 0.7em;
 }
 
 article a {
@@ -3705,14 +3705,14 @@ figcaption {
 h1.source, h3.source, h2.source, .source, .quote .source {
   padding: 0 10px 10px 0;
   line-height: 150%;
-  font-size: 11px;
+  font-size: 0.7333333333333333em;
   font-weight: 300;
   margin-bottom: 5px
 }
 
 h1.new-headline, h2.new-headline, h3.new-headline {
   line-height: 150%;
-  font-size: 11px;
+  font-size: 0.7333333333333333em;
   font-weight: 300
 }
 
@@ -3727,7 +3727,7 @@ body.permalink article.text .body-text h1 {
 }
 
 body.permalink article.text.blog-mine-font-size-11 .body-text h1 {
-  font-size: 11px!important
+  font-size: 0.8666666666666667em!important
 }
 
 .quote h1.source, .quote h3.source, .quote .source {
@@ -3741,7 +3741,7 @@ body.permalink article.text.blog-mine-font-size-11 .body-text h1 {
 .quote .post-content blockquote {
   font-weight: 400;
   font-style: normal;
-  font-size: 16.25px;
+  font-size: 1.0833333333333333em;
   letter-spacing: .01em;
   line-height: 1.9em;
 }
@@ -3751,12 +3751,12 @@ body.permalink article.text.blog-mine-font-size-11 .body-text h1 {
 }
 
 .quote .post-content blockquote:first-letter {
-  font-size: 22px
+  font-size: 1.4666666666666666em
 }
 
 .quote .post-content blockquote:first-line {
   font-variant: small-caps;
-  font-size: 20px
+  font-size: 1.3333333333333333em
 }
 
 .blog-mine-info {
@@ -4034,7 +4034,7 @@ body::-webkit-scrollbar {
     padding: 0;
   }
   #blog-mine-pagination .next, #blog-mine-pagination .previous {
-    font-size: 13px;
+    font-size: 0.8666666666666667em;
   }
   .date-notes, .post-controls {
     display: table-row;
@@ -4070,7 +4070,7 @@ body::-webkit-scrollbar {
     margin-right: 5px;
   }
   .post-controls .control {
-    font-size: 16px;
+    font-size: 1.0666666666666667em;
   }
   article .reblog_button {
     width: 16px;
