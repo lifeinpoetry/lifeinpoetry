@@ -3678,7 +3678,7 @@ body .blog-mine-sidebar .description {
 .post-content blockquote {
   font-weight: 300;
   font-style: italic;
-  font-size: 0.8666666666666667em;
+  font-size: 1em;
 }
 
 .quote .post-content>blockquote p:last-child {
