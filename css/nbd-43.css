@@ -2733,6 +2733,10 @@ body::-webkit-scrollbar {
   }
 }
 
+.nav-menu .nav-item.label..blog-mine-font-size-11 {
+  font-size: .98em !important;
+}
+
             .mySocialLinks {
                 float: right;
                 text-align: right;
