@@ -2623,10 +2623,7 @@ body::-webkit-scrollbar {
     line-height: 100%
   }
   
-  .header-wrapper > div {
-    max-width: 702px;
-  }
-  .blog-mine-body, .logo-wrapper, .header-wrapper {
+  .blog-mine-body, .logo-wrapper, .header-wrapper > div {
     max-width: 502px
   }
   .search-wrapper {
