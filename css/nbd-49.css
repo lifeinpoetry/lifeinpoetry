@@ -2609,8 +2609,6 @@ body::-webkit-scrollbar {
     min-width: 9em;
     max-width: 9em
   }
-
-  .header-wrapper,
   #posts, .posts-no-posts {
     position: relative;
     display: block;
@@ -2778,6 +2776,10 @@ body::-webkit-scrollbar {
                 background-color: darkgrey;
                 outline: 1px solid slategrey;
             }
+
+.header-wrapper {
+ max-width: 702px; 
+}
 
             header.header-wrapper > div {
                 position: static;
