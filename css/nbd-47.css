@@ -2609,6 +2609,8 @@ body::-webkit-scrollbar {
     min-width: 9em;
     max-width: 9em
   }
+
+  .header-wrapper,
   #posts, .posts-no-posts {
     position: relative;
     display: block;
@@ -3252,7 +3254,7 @@ body::-webkit-scrollbar {
                     width: 703px;
                     padding: 0;
                 }
-                
+
                 .post-header,
                 #posts .post-content,
                 .text .post-content {
