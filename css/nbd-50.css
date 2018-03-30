@@ -2777,10 +2777,6 @@ body::-webkit-scrollbar {
                 outline: 1px solid slategrey;
             }
 
-.header-wrapper {
- max-width: 702px; 
-}
-
             header.header-wrapper > div {
                 position: static;
                 z-index: 50;
@@ -3023,7 +3019,7 @@ body::-webkit-scrollbar {
             }
             
             .logo-wrapper {
-                                box-sizing: border-box;
+                box-sizing: border-box;
                 position: relative;
                 background: #5c5c5c;
                 background: rgba(0, 0, 0, 0.9);
@@ -3042,7 +3038,7 @@ body::-webkit-scrollbar {
             }
             
             
-            @media screen and (max-width: 568px) {
+            @media screen and (max-width: 702px) {
                 #footer {
                     max-height: initial;
                     height: initial;
@@ -3082,6 +3078,7 @@ body::-webkit-scrollbar {
                     min-width: 260px;
                 }
                 
+                header-wrapper > div,
                 header.header-wrapper > div,
                 #header,
                 .header-wrapper,
