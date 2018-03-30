@@ -348,6 +348,18 @@
             $("body").removeClass("tmblr-iframe-full-width");
         });
         
+        function removeFrameBorder()
+        {
+            $("iframe").removeAttr("frameborder");
+            $("iframe").removeAttr("scrolling");
+            $("div.like_button iframe").attr("style", "background-color:transparent;").removeAttr("allowtransparency");
+            $("iframe[name='unified-controls']").attr("title", "Tumblr controls");
+            $("div.like-control iframe").attr("title", "Like button");
+            $("iframe[id='ga_target']").attr("title", "Google Analytics");
+        }
+
+        window.setTimeout( removeFrameBorder, 5000 ); // 5 seconds
+        
         $("body").removeClass("tmblr-iframe-full-width");
     });
 
