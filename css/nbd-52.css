@@ -2612,7 +2612,7 @@ body::-webkit-scrollbar {
   #posts, .posts-no-posts {
     position: relative;
     display: block;
-    width: auto
+    width: auto;
   }
 }
 
