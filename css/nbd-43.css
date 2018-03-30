@@ -2733,6 +2733,33 @@ body::-webkit-scrollbar {
   }
 }
 
+            .mySocialLinks {
+                float: right;
+                text-align: right;
+                right: 20px;
+                width: 240px;
+                height: 24px;
+            }
+            
+            .mySocialLinks ul {
+                height: 24px;
+            }
+            
+            .mySocialLinks-li {
+                max-height: 24px;
+                max-width: 24px;
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                position: relative;
+                margin-right: 3px;
+            }
+            
+            .mySocialLinks-link {
+                display: block;
+                line-height: 0;
+            }
+
             body::-webkit-scrollbar-track {
                 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
             }
