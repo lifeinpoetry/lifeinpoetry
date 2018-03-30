@@ -3078,7 +3078,7 @@ body::-webkit-scrollbar {
                     min-width: 260px;
                 }
                 
-                header-wrapper > div,
+                .header-wrapper,
                 header.header-wrapper > div,
                 #header,
                 .header-wrapper,
