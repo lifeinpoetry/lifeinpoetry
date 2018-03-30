@@ -2623,7 +2623,7 @@ body::-webkit-scrollbar {
     line-height: 100%
   }
   
-  .blog-mine-body, .logo-wrapper, .header-wrapper > div {
+  .blog-mine-body, .logo-wrapper, header.header-wrapper > div {
     max-width: 502px
   }
   .search-wrapper {
@@ -2816,7 +2816,7 @@ body::-webkit-scrollbar {
             #header,
             #search-wrapper,
             .header-wrapper,
-            .header-wrapper > div,
+            header.header-wrapper > div,
             #footer * {
                 box-sizing: border-box;
             }
