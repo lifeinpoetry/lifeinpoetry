@@ -2733,8 +2733,12 @@ body::-webkit-scrollbar {
   }
 }
 
-.nav-menu .nav-item.label..blog-mine-font-size-11 {
+.nav-menu .nav-item.label.blog-mine-font-size-11 {
   font-size: .98em !important;
+}
+
+.nav-menu .nav-item.label {
+ border: none; 
 }
 
             .mySocialLinks {
