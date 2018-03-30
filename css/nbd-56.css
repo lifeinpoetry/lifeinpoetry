@@ -3085,6 +3085,17 @@ body::-webkit-scrollbar {
                 .header-wrapper,
                 #blog-mine-pagination, .pagination-middle,
                 body.index-page #footer-inner {
+                    max-width: 587px;
+                }
+            }
+
+            @media screen and (max-width: 602px) {
+                .header-wrapper,
+                header.header-wrapper > div,
+                #header,
+                .header-wrapper,
+                #blog-mine-pagination, .pagination-middle,
+                body.index-page #footer-inner {
                     max-width: 487px;
                 }
             }
