@@ -3061,8 +3061,8 @@ figure.photoset {
   font-weight: normal;
   font-style: normal;
   font-family: 'nevisBold';
-  src: url("https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/nevis-webfont.eot");
-  src: url("https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/nevis-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/nevis-webfont.woff") format('woff'), url("https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/nevis-webfont.ttf") format('truetype'), url("https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/nevis-webfont.svg#nevisBold") format('svg'), local('nevisBold')
+  src: url("https://cdn.jsdelivr.net/gh/lifeinpoetry/lifeinpoetry/fonts/nevis-webfont.eot");
+  src: url("https://cdn.jsdelivr.net/gh/lifeinpoetry/lifeinpoetry/fonts/nevis-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.jsdelivr.net/gh/lifeinpoetry/lifeinpoetry/fonts/nevis-webfont.woff") format('woff'), url("https://cdn.jsdelivr.net/gh/lifeinpoetry/lifeinpoetry/fonts/nevis-webfont.ttf") format('truetype'), url("https://cdn.jsdelivr.net/gh/lifeinpoetry/lifeinpoetry/fonts/nevis-webfont.svg#nevisBold") format('svg'), local('nevisBold')
 }
 
 @font-face {
@@ -3070,7 +3070,7 @@ figure.photoset {
   font-style: italic;
   font-family: 'Fanwood Text';
   src: url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text_italic-webfont.eot');
-  src: url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text_italic-webfont.eot?#iefix') format('embedded-opentype'), url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text_italic-webfont.woff') format('woff'), url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text_italic-webfont.ttf') format('truetype'), url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text_italic-webfont.svg#fanwooditalic') format('svg'), local('fanwooditalic')
+  src: url('https://cdn.jsdelivr.net/gh/lifeinpoetry/lifeinpoetry/fonts/fanwood_text_italic-webfont.eot?#iefix') format('embedded-opentype'), url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text_italic-webfont.woff') format('woff'), url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text_italic-webfont.ttf') format('truetype'), url('https://cdn.jsdelivr.net/gh/lifeinpoetry/lifeinpoetry/fonts/fanwood_text_italic-webfont.svg#fanwooditalic') format('svg'), local('fanwooditalic')
 }
 
 @font-face {
@@ -3078,7 +3078,7 @@ figure.photoset {
   font-style: normal;
   font-family: 'Fanwood Text';
   src: url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text-webfont.eot');
-  src: url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text-webfont.eot?#iefix') format('embedded-opentype'), url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text-webfont.woff') format('woff'), url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text-webfont.ttf') format('truetype'), url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text_italic-webfont.svg#fanwoodregular') format('svg'), local('fanwoodregular')
+  src: url('https://cdn.jsdelivr.net/gh/lifeinpoetry/lifeinpoetry/fonts/fanwood_text-webfont.eot?#iefix') format('embedded-opentype'), url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text-webfont.woff') format('woff'), url('https://cdn.rawgit.com/lifeinpoetry/lifeinpoetry/master/fonts/fanwood_text-webfont.ttf') format('truetype'), url('https://cdn.jsdelivr.net/gh/lifeinpoetry/lifeinpoetry/fonts/fanwood_text_italic-webfont.svg#fanwoodregular') format('svg'), local('fanwoodregular')
 }
 
 .services-service a .sr-only {
