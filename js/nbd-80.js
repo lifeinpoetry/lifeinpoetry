@@ -123,7 +123,7 @@
 
     if ( postTypePage == "index" )
     {
-        isoFixed = moment.unix( postPostTimestamp ).utc().format();
+        isoFixed = DateTime.fromMillis( postPostTimestamp ).toISO();
 
         if ( isoFixed != null && isoFixed != "" )
         {
@@ -138,7 +138,7 @@
             }
         }
     } else if ( postTypePage == "permalink" ) {
-        isoFixed = moment.unix( postPostTimestamp ).utc().format();
+        isoFixed = DateTime.fromMillis( postPostTimestamp ).toISO();
 
         if ( isoFixed != null && isoFixed != "" )
         {
