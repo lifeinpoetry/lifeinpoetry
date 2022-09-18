@@ -542,6 +542,7 @@ body.is-scrolling #posts * {
 .search-wrapper {
   position: relative;
   overflow: hidden;
+  color: #010101;
 }
 
 .search-wrapper .search-field-label {
@@ -552,7 +553,7 @@ body.is-scrolling #posts * {
 .search-wrapper .search-field {
   height: 54px;
   
-  color: #070707;
+  color: inherit;
   border: 0;
   outline: 0;
   margin: 0;
