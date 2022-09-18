@@ -2838,7 +2838,7 @@ body::-webkit-scrollbar {
                 max-width: 702px;
             }
 
-            #footer-inner {
+            #footer-inner, #AmazonAssociate {
                 -ms-flex: none;
                 flex: none;
                 max-width: 702px;
@@ -2853,7 +2853,9 @@ body::-webkit-scrollbar {
             
             body.index-page #blog-mine-pagination > div,
             body.index-page #footer-inner,
-            body.permalink #footer-inner {
+            body.permalink #footer-inner,
+            body.index-page #AmazonAssociate,
+            body.permalink #AmazonAssociate {
                 display: -webkit-flex;
                 display: flex;
                 -webkit-flex-direction: row;
@@ -2941,8 +2943,8 @@ body::-webkit-scrollbar {
                 box-sizing: border-box;
             }
             
-            
-             #footer-inner {
+            #AmazonAssociate,
+            #footer-inner {
                 position: static;
                 z-index: 50;
             }
@@ -3084,7 +3086,8 @@ body::-webkit-scrollbar {
                 #header,
                 .header-wrapper,
                 #blog-mine-pagination, .pagination-middle,
-                body.index-page #footer-inner {
+                body.index-page #footer-inner,
+                body.index-page #AmazonAssociate {
                     max-width: 587px;
                 }
             }
@@ -3095,7 +3098,8 @@ body::-webkit-scrollbar {
                 #header,
                 .header-wrapper,
                 #blog-mine-pagination, .pagination-middle,
-                body.index-page #footer-inner {
+                body.index-page #footer-inner,
+                body.index-page #AmazonAssociate {
                     max-width: 487px;
                 }
             }
@@ -3360,7 +3364,11 @@ body::-webkit-scrollbar {
                     max-width: 100%;
                 }
                 
-                body.index-page #blog-mine-pagination > div, body.index-page #footer-inner, body.permalink #footer-inner {
+                body.index-page #blog-mine-pagination > div, 
+                body.index-page #footer-inner, 
+                body.permalink #footer-inner, 
+                body.index-page #AmazonAssociate, 
+                body.permalink #AmazonAssociate {
                     display: block;
                 }
             }
@@ -3492,7 +3500,11 @@ nav.pagination-middle ul, #blog-mine-pagination ul {
                     display: block;
                 }
                 
-                body.index-page #blog-mine-pagination > div, body.index-page #footer-inner, body.permalink #footer-inner {
+                body.index-page #blog-mine-pagination > div, 
+                body.index-page #footer-inner, 
+                body.permalink #footer-inner,
+                body.index-page #AmazonAssociate, 
+                body.permalink #AmazonAssociate {
                     display: block;
                 }
                 
