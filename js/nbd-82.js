@@ -356,9 +356,10 @@
             $("iframe[name='unified-controls']").attr("title", "Tumblr controls");
             $("div.like_button iframe").attr("title", "Like button");
             $("iframe[id='ga_target']").attr("title", "Google Analytics");
+            $("a.reblog_button").attr("title", "Reblog button");
         }
 
-        window.setTimeout( removeFrameBorder, 5000 ); // 5 seconds
+        window.setTimeout( removeFrameBorder, 1000 ); // 5 seconds
         
         $("body").removeClass("tmblr-iframe-full-width");
     });
