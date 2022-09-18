@@ -2806,7 +2806,7 @@ body::-webkit-scrollbar {
                 position: fixed;
                 background: #f9f9f9;
                 width: 100%;
-                height: 55px;
+                height: 85px;
                 bottom: 0px;
                 max-width: initial;
                 z-index: 55;
@@ -2849,6 +2849,10 @@ body::-webkit-scrollbar {
                 -ms-box-flex: 0;
                 -moz-box-flex: 0;
                 padding: 1% 0;
+            }
+            #AmazonAssociate {
+              padding-top: 0; 
+              font-size: 14px;
             }
             
             body.index-page #blog-mine-pagination > div,
