@@ -354,7 +354,7 @@
             $("iframe").removeAttr("scrolling");
             $("div.like_button iframe").attr("style", "background-color:transparent;").removeAttr("allowtransparency");
             $("iframe[name='unified-controls']").attr("title", "Tumblr controls");
-            $("div.like-control iframe").attr("title", "Like button");
+            $("div.like_button iframe").attr("title", "Like button");
             $("iframe[id='ga_target']").attr("title", "Google Analytics");
         }
 
