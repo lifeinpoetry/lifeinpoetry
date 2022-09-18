@@ -542,7 +542,7 @@ body.is-scrolling #posts * {
 .search-wrapper {
   position: relative;
   overflow: hidden;
-  color: #010101;
+  color: #000000;
 }
 
 .search-wrapper .search-field-label {
