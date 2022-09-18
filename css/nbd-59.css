@@ -2036,7 +2036,7 @@ h2.source:first-child, h1.source:first-child, h3.source:first-child {
   max-height: 26px;
   border-radius: 20px;
   background: #bfbfbf;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.15);
   opacity: .45;
   -webkit-transition: .1s all linear;
   -o-transition: .1s all linear;
