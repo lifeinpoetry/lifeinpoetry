@@ -359,7 +359,7 @@
             $("a.reblog_button").attr("title", "Reblog button");
         }
 
-        window.setTimeout( removeFrameBorder, 1000 ); // 5 seconds
+        window.setTimeout( removeFrameBorder, 5 ); // 5 seconds
         
         $("body").removeClass("tmblr-iframe-full-width");
     });
