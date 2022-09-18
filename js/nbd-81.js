@@ -339,12 +339,12 @@
     });
 
     $( window ).on( "load", function() {
-        $("iframe.photoset").load( function() {
+        $("iframe.photoset").on("load", function(e) {
             $("iframe.photoset").contents().find("head").append( $("<style type='text/css'>.photoset .photoset_row:first-child img {border-radius: 3px 3px 0 0;} .photoset .photoset_row:last-child img{border-radius: 0 0 3px 3px;}  <\/style>"));
         });
 
         $("body").removeClass("tmblr-iframe-full-width");
-        $("iframe.tmblr-iframe--unified-controls").load( function() {
+        $("iframe.tmblr-iframe--unified-controls").on("load", function(e) {
             $("body").removeClass("tmblr-iframe-full-width");
         });
         
