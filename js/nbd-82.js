@@ -165,6 +165,14 @@
             }
         }
     }
+    
+     
+    if ( $(".permalink-form label[aria-describedby]").length )
+    {
+        $(".permalink-form label[aria-describedby]").each(function() {
+            this.attr("aria-describedby", this.attr("aria-describedby").replace( this.attr("lifeinpoetry-permalink"), ""));
+        })   
+    }
 
     $("iframe.tmblr-iframe--controls").each(function () {
         //Using closures to capture each one
