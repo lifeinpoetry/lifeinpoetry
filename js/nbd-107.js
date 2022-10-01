@@ -370,7 +370,6 @@
         $("a.reblog_button").each(function() {
             var pop = $(this).parents("region").children("pop"); 
             var popText =  pop.children("label .replace-with-title").text();
-            popText = popText.replace( pop.attr("lifeinpoetry-permalink"), "");
             $(this).attr("aria-label", popText );
         })   
     }
