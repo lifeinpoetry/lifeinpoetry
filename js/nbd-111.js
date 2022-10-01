@@ -372,7 +372,7 @@
             var popText = pop.attr("lifeinpoetry-likeReblogText");
             var popPermalink = pop.attr("lifeinpoetry-permalink");
             popText = popText.replace( popPermalink, "");
-            $(this).attr("aria-label", pop.attr("lifeinpoetry-reblog") + ": " + popText );
+            $(this).append( "<span class='sr-only'>" +  pop.attr("lifeinpoetry-reblog") + ": " + popText  +"</span>" );
         })   
     }
                     $("iframe[name='unified-controls']").on("load", function(e) {
