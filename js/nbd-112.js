@@ -375,6 +375,20 @@
             $(this).append( "<span class='sr-only'>" +  pop.attr("lifeinpoetry-reblog") + ": " + popText  +"</span>" );
         })   
     }
+            
+                      $("a.reblog_button").attr("title", "Reblog button");
+                if ( $("a.reblog_button").length )
+    {
+        $("iframe.like_toggle").each(function() {
+            var popLike = $(this).parents("ul");
+            var popLikeText = popLike.attr("lifeinpoetry-likeReblogText");
+            var popLikePermalink = popLike.attr("lifeinpoetry-permalink");
+            popLikeText = popText.replace( popLikePermalink, "");
+            $(this).attr("aria-label", popLike.attr("lifeinpoetry-like") + ": " + popLikeText  );
+        })   
+    }  
+            
+            
                     $("iframe[name='unified-controls']").on("load", function(e) {
             $("iframe[name='unified-controls']").removeClass("tmblr-iframe-full-width");
         });
