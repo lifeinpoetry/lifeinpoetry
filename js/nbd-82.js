@@ -162,11 +162,11 @@
         })   
     }
     
-    if ( $("time").length )
+    if ( $("time[lifeinpoetry-unixdatetime]").length )
     {
         var newDateTime = "";
-        $("time").each(function() {
-             newDateTime = DateTime.fromMillis( $(this).attr("datetime") * 1000 ).toISO();
+        $("time[lifeinpoetry-unixdatetime]").each(function() {
+             newDateTime = DateTime.fromMillis( $(this).attr("lifeinpoetry-unixdatetime") * 1000 ).toISO();
              $(this).attr("datetime", newDateTime);
         })   
     }
