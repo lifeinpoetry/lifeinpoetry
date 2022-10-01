@@ -354,11 +354,7 @@
         $("body").removeClass("tmblr-iframe-full-width");
         var allOfTumblr = $("#allOfTumblr").attr("lifeinpoetry-allOfTumblr");
 
-        
-        $("iframe[name='unified-controls']").on("load", function(e) {
-            $("iframe[name='unified-controls']").removeClass("tmblr-iframe-full-width");
-            $("iframe[name='unified-controls']").contents().find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
-        });
+       
         
         function removeFrameBorder()
         {
@@ -369,6 +365,10 @@
             $("div.like_button iframe").attr("title", "Like button");
             $("iframe[id='ga_target']").attr("title", "Google Analytics");
             $("a.reblog_button").attr("title", "Reblog button");
+                    $("iframe[name='unified-controls']").on("load", function(e) {
+            $("iframe[name='unified-controls']").removeClass("tmblr-iframe-full-width");
+            $("iframe[name='unified-controls']").contents().find(".t-logo").attr("aria-label", "z");
+        });
         }
 
         window.setTimeout( removeFrameBorder, 5 ); // 5 seconds
