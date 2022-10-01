@@ -40,14 +40,6 @@
     $("i").replaceWith(function() {
         return $("<em>").html($(this).html());
     });
-    
-    if ( $("span[lifeinpoetry-allOfTumblr]").length && $("iframe[name=unified-controls]").length )
-    {
-        var allOfTumblr = $("#allOfTumblr").attr("lifeinpoetry-allOfTumblr");
-    
-        var unifiedControlsBody = $("iframe[name=unified-controls]").contents().find("body");
-        unifiedControlsBody.find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
-    }
 
     var htmlJsHeadline = "";
     var jsHeadline = "";
@@ -360,8 +352,10 @@
         });
 
         $("body").removeClass("tmblr-iframe-full-width");
+        var allOfTumblr = $("#allOfTumblr").attr("lifeinpoetry-allOfTumblr");
         $("iframe.tmblr-iframe--unified-controls").on("load", function(e) {
             $("body").removeClass("tmblr-iframe-full-width");
+            $("body").find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
         });
         
         function removeFrameBorder()
