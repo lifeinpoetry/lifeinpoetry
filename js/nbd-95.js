@@ -43,8 +43,9 @@
     
     if ( $(".allOfTumblr").length && $("iframe[name=unified-controls]").length )
     {
+        var allOfTumblr = $(".allOfTumblr").text();
     
-    $("iframe[name=unified-controls] .iframe-controls-container.iframe-controls-container--unified .t-logo.tx-button").attr("aria-label", $(".allOfTumblr").text());
+    $("iframe[name=unified-controls] .t-logo.tx-button").attr("aria-label", allOfTumblr);
     }
 
     var htmlJsHeadline = "";
