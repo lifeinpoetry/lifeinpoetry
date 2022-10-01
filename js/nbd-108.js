@@ -368,8 +368,10 @@
                 if ( $("a.reblog_button").length )
     {
         $("a.reblog_button").each(function() {
-            var pop = $(this).parents("region").children("pop"); 
-            var popText =  pop.children("label .replace-with-title").text();
+            var pop = $(this).parents("ul");
+            var popText = pop.attr("lifeinpoetry-likeReblogText");
+            var popPermalink = pop.attr("lifeinpoetry-permalink");
+            popText = popText.replace( popPermalink, "");
             $(this).attr("aria-label", popText );
         })   
     }
