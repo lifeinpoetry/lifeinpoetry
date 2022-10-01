@@ -372,12 +372,11 @@
             var popText = pop.attr("lifeinpoetry-likeReblogText");
             var popPermalink = pop.attr("lifeinpoetry-permalink");
             popText = popText.replace( popPermalink, "");
-            $(this).attr("aria-label", popText );
+            $(this).attr("aria-label", pop.attr("lifeinpoetry-reblog") + ": " + popText );
         })   
     }
                     $("iframe[name='unified-controls']").on("load", function(e) {
             $("iframe[name='unified-controls']").removeClass("tmblr-iframe-full-width");
-            $("iframe[name='unified-controls']").contents().find(".t-logo").attr("aria-label", "z");
         });
         }
 
