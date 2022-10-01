@@ -166,8 +166,8 @@
     {
         var newDateTime = "";
         $("time[lifeinpoetry-unixdatetime]").each(function() {
-             newDateTime = DateTime.fromMillis( $(this).attr("lifeinpoetry-unixdatetime") * 1000 ).toISO();
-             $(this).attr("datetime", newDateTime);
+            newDateTime = DateTime.fromMillis( $(this).attr("lifeinpoetry-unixdatetime") * 1000 ).toISO();
+            $(this).attr("datetime", newDateTime);
         })   
     }
 
