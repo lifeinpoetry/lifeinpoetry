@@ -168,7 +168,7 @@
             $(this).text().replace( $(this).parents("pop").attr("lifeinpoetry-permalink"), "");
         })   
     }
-    
+
     if ( $("time[lifeinpoetry-unixdatetime]").length )
     {
         var newDateTime = "";
