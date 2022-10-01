@@ -45,7 +45,7 @@
     {
         var allOfTumblr = $("#allOfTumblr").attr("lifeinpoetry-allOfTumblr");
     
-        var unifiedControlsBody = $("iframe[name=unified-controls]").contents().find("body")
+        var unifiedControlsBody = $("iframe[name=unified-controls]").contents().find("body");
         unifiedControlsBody.find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
     }
 
