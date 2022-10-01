@@ -365,6 +365,15 @@
             $("div.like_button iframe").attr("title", "Like button");
             $("iframe[id='ga_target']").attr("title", "Google Analytics");
             $("a.reblog_button").attr("title", "Reblog button");
+                if ( $("a.reblog_button").length )
+    {
+        $("a.reblog_button").each(function() {
+            var pop = $(this).parents("region").children("pop"); 
+            var popText =  pop.children("input").text();
+            popText = popText.replace( pop.attr("lifeinpoetry-permalink"), "");
+            $(this).attr("aria-label", popText );
+        })   
+    }
                     $("iframe[name='unified-controls']").on("load", function(e) {
             $("iframe[name='unified-controls']").removeClass("tmblr-iframe-full-width");
             $("iframe[name='unified-controls']").contents().find(".t-logo").attr("aria-label", "z");
