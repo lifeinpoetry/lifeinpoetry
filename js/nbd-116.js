@@ -363,7 +363,6 @@
             $("div.like_button iframe").attr("style", "background-color:transparent;").removeAttr("allowtransparency");
             $("iframe[name='unified-controls']").attr("title", "Tumblr controls");
             $("iframe[id='ga_target']").attr("title", "Google Analytics");
-            $("a.reblog_button").attr("title", "Reblog button");
                 if ( $("a.reblog_button").length )
     {
         $("a.reblog_button").each(function() {
