@@ -383,7 +383,7 @@
             var popLike = $(this).parents("ul");
             var popLikeText = popLike.attr("lifeinpoetry-likeReblogText");
             var popLikePermalink = popLike.attr("lifeinpoetry-permalink");
-            popLikeText = popText.replace( popLikePermalink, "");
+            popLikeText = popLikeText.replace( popLikePermalink, "");
             $(this).attr("aria-label", popLike.attr("lifeinpoetry-like") + ": " + popLikeText  );
         })   
     }  
