@@ -354,8 +354,8 @@
         $("body").removeClass("tmblr-iframe-full-width");
         var allOfTumblr = $("#allOfTumblr").attr("lifeinpoetry-allOfTumblr");
         $("iframe.tmblr-iframe--unified-controls").on("load", function(e) {
-            $("body").removeClass("tmblr-iframe-full-width");
-            $("body").find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
+            $("iframe.tmblr-iframe--unified-controls").removeClass("tmblr-iframe-full-width");
+            $("iframe.tmblr-iframe--unified-controls").contents().find("body").find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
         });
         
         function removeFrameBorder()
