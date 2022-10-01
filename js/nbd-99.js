@@ -41,11 +41,12 @@
         return $("<em>").html($(this).html());
     });
     
-    if ( $("#allOfTumblr[lifeinpoetry-allOfTumblr]").length && $("iframe[name=unified-controls]").contents().find(".t-logo.tx-button").length )
+    if ( $("span[lifeinpoetry-allOfTumblr]").length && $("iframe[name=unified-controls]").length )
     {
         var allOfTumblr = $("#allOfTumblr").attr("lifeinpoetry-allOfTumblr");
     
-    $("iframe[name=unified-controls]").contents().find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
+        var unifiedControlsBody = $("iframe[name=unified-controls]").contents().find("body")
+        unifiedControlsBody.find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
     }
 
     var htmlJsHeadline = "";
