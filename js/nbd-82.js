@@ -154,6 +154,12 @@
         }
     }
     
+    if ( $(".share-service .replace-with-title").length )
+    {
+        $(".share-service .replace-with-title").each(function() {
+            $(this).text().replace( $(this).parents("pop").attr("lifeinpoetry-permalink"), "");
+        })   
+    }
      
     if ( $(".permalink-form label[aria-describedby]").length )
     {
@@ -162,12 +168,6 @@
         })   
     }
     
-    if ( $(".share-service .replace-with-title").length )
-    {
-        $(".share-service .replace-with-title").each(function() {
-            $(this).text().replace( $(this).parents("pop").attr("lifeinpoetry-permalink"), "");
-        })   
-    }
 
     if ( $("time[lifeinpoetry-unixdatetime]").length )
     {
