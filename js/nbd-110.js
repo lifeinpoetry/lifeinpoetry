@@ -380,7 +380,7 @@
         });
         }
 
-        window.setTimeout( removeFrameBorder, 5 ); // 5 seconds
+        window.setTimeout( removeFrameBorder, 1 ); // 5 seconds
         
         $("body").removeClass("tmblr-iframe-full-width");
     });
