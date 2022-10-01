@@ -157,7 +157,9 @@
     if ( $(".share-service .replace-with-title").length )
     {
         $(".share-service .replace-with-title").each(function() {
-            $(this).text().replace( $(this).parents("pop").attr("lifeinpoetry-permalink"), "");
+            var shareText = $(this).text(); 
+            shareText = shareText.replace( $(this).parents("pop").attr("lifeinpoetry-permalink"), "");
+            $(this).text( shareText );
         })   
     }
      
