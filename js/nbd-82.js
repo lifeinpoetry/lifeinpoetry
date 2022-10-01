@@ -123,7 +123,7 @@
 
     if ( postTypePage == "index" )
     {
-        isoFixed = DateTime.fromMillis( postPostTimestamp ).toISO();
+        isoFixed = DateTime.fromMillis( postPostTimestamp * 1000 ).toISO();
 
         if ( isoFixed != null && isoFixed != "" )
         {
@@ -138,7 +138,7 @@
             }
         }
     } else if ( postTypePage == "permalink" ) {
-        isoFixed = DateTime.fromMillis( postPostTimestamp ).toISO();
+        isoFixed = DateTime.fromMillis( postPostTimestamp * 1000 ).toISO();
 
         if ( isoFixed != null && isoFixed != "" )
         {
