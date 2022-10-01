@@ -41,9 +41,9 @@
         return $("<em>").html($(this).html());
     });
     
-    if ( $("#allOfTumblr").length && $("iframe[name=unified-controls]").contents().find(".t-logo.tx-button").length )
+    if ( $("#allOfTumblr[lifeinpoetry-allOfTumblr]").length && $("iframe[name=unified-controls]").contents().find(".t-logo.tx-button").length )
     {
-        var allOfTumblr = $("#allOfTumblr").text();
+        var allOfTumblr = $("#allOfTumblr").attr("lifeinpoetry-allOfTumblr");
     
     $("iframe[name=unified-controls]").contents().find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
     }
