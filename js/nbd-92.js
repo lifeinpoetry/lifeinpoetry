@@ -158,7 +158,7 @@
     {
         $(".share-service .replace-with-title").each(function() {
             var shareText = $(this).text(); 
-            shareText = shareText.replace( $(this).parents("pop").attr("lifeinpoetry-permalink"), "");
+            shareText = shareText.replace( $(this).parents(".pop").attr("lifeinpoetry-permalink"), "");
             $(this).text( shareText );
         })   
     }
