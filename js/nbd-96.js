@@ -41,11 +41,11 @@
         return $("<em>").html($(this).html());
     });
     
-    if ( $(".allOfTumblr").length && $("iframe[name=unified-controls]").length )
+    if ( $(".allOfTumblr").length && $("iframe[name=unified-controls]").contents().find(".t-logo.tx-button").length )
     {
         var allOfTumblr = $(".allOfTumblr").text();
     
-    $("iframe[name=unified-controls] .t-logo.tx-button").attr("aria-label", allOfTumblr);
+    $("iframe[name=unified-controls]").contents().find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
     }
 
     var htmlJsHeadline = "";
