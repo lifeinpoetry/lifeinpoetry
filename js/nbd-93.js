@@ -154,22 +154,14 @@
         }
     }
     
-    if ( $(".share-service .replace-with-title").length )
+    if ( $(".pop .replace-with-title").length )
     {
-        $(".share-service .replace-with-title").each(function() {
+        $(".pop .replace-with-title").each(function() {
             var shareText = $(this).text(); 
             shareText = shareText.replace( $(this).parents(".pop").attr("lifeinpoetry-permalink"), "");
             $(this).text( shareText );
         })   
     }
-     
-    if ( $(".permalink-form label[aria-describedby]").length )
-    {
-        $(".permalink-form label[aria-describedby]").each(function() {
-            $(this).attr("aria-describedby", $(this).attr("aria-describedby").replace( $(this).attr("lifeinpoetry-permalink"), ""));
-        })   
-    }
-    
 
     if ( $("time[lifeinpoetry-unixdatetime]").length )
     {
