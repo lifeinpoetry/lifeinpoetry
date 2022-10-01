@@ -135,7 +135,7 @@
             if ( $("time").length )
             {
                 $("time").each(function() {
-                    this.attr("datetime", DateTime.fromMillis( this.attr("datetime") * 1000 ).toISO());
+                    $(this).attr("datetime", DateTime.fromMillis( $(this).attr("datetime") * 1000 ).toISO());
                 })   
             }
         }
@@ -170,7 +170,7 @@
     if ( $(".permalink-form label[aria-describedby]").length )
     {
         $(".permalink-form label[aria-describedby]").each(function() {
-            this.attr("aria-describedby", this.attr("aria-describedby").replace( this.attr("lifeinpoetry-permalink"), ""));
+            $(this).attr("aria-describedby", $(this).attr("aria-describedby").replace( $(this).attr("lifeinpoetry-permalink"), ""));
         })   
     }
 
