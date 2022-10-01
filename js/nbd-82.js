@@ -131,14 +131,6 @@
             {
                 $("meta[property='og:updated_time']").attr("content", isoFixed);
             }
- 
-            if ( $("time").length )
-            {
-                $("time").each(function() {
-                    newDateTime = DateTime.fromMillis( $(this).attr("datetime") * 1000 ).toISO();
-                    $(this).attr("datetime", newDateTime);
-                })   
-            }
         }
     } else if ( postTypePage == "permalink" ) {
         isoFixed = DateTime.fromMillis( postPostTimestamp * 1000 ).toISO();
@@ -172,6 +164,15 @@
     {
         $(".permalink-form label[aria-describedby]").each(function() {
             $(this).attr("aria-describedby", $(this).attr("aria-describedby").replace( $(this).attr("lifeinpoetry-permalink"), ""));
+        })   
+    }
+    
+    if ( $("time").length )
+    {
+        var newDateTime = "";
+        $("time").each(function() {
+             newDateTime = DateTime.fromMillis( $(this).attr("datetime") * 1000 ).toISO();
+             $(this).attr("datetime", newDateTime);
         })   
     }
 
