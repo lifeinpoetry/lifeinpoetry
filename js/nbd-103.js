@@ -353,9 +353,11 @@
 
         $("body").removeClass("tmblr-iframe-full-width");
         var allOfTumblr = $("#allOfTumblr").attr("lifeinpoetry-allOfTumblr");
-        $("iframe.tmblr-iframe--unified-controls").on("load", function(e) {
-            $("iframe.tmblr-iframe--unified-controls").removeClass("tmblr-iframe-full-width");
-            $("iframe.tmblr-iframe--unified-controls").contents().find("body").find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
+
+        
+        $("iframe[name='unified-controls']").on("load", function(e) {
+            $("iframe[name='unified-controls']").removeClass("tmblr-iframe-full-width");
+            $("iframe[name='unified-controls']").contents().find(".t-logo.tx-button").attr("aria-label", allOfTumblr);
         });
         
         function removeFrameBorder()
