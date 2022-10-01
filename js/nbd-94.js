@@ -40,6 +40,12 @@
     $("i").replaceWith(function() {
         return $("<em>").html($(this).html());
     });
+    
+    if ( $(".allOfTumblr").length && $("iframe[name=unified-controls]").length )
+    {
+    
+    $("iframe[name=unified-controls] .iframe-controls-container.iframe-controls-container--unified .t-logo.tx-button").attr("aria-label", $(".allOfTumblr").text());
+    }
 
     var htmlJsHeadline = "";
     var jsHeadline = "";
