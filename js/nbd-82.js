@@ -151,11 +151,6 @@
             {
                 $("meta[property='og:updated_time']").attr("content", isoFixed);
             }
-
-            if ( $("time").length )
-            {
-                $("time").attr("datetime", isoFixed);
-            }
         }
     }
     
