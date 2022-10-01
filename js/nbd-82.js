@@ -135,7 +135,8 @@
             if ( $("time").length )
             {
                 $("time").each(function() {
-                    $(this).attr("datetime", DateTime.fromMillis( $(this).attr("datetime") * 1000 ).toISO());
+                    newDateTime = DateTime.fromMillis( $(this).attr("datetime") * 1000 ).toISO();
+                    $(this).attr("datetime", newDateTime);
                 })   
             }
         }
