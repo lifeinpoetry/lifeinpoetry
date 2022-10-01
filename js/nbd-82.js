@@ -131,10 +131,12 @@
             {
                 $("meta[property='og:updated_time']").attr("content", isoFixed);
             }
-
+ 
             if ( $("time").length )
             {
-                $("time").attr("datetime", isoFixed);
+                $("time").each(function() {
+                    this.attr("datetime", DateTime.fromMillis( this.attr("datetime") * 1000 ).toISO());
+                })   
             }
         }
     } else if ( postTypePage == "permalink" ) {
