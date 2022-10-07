@@ -123,7 +123,7 @@
 
     if ( postTypePage == "index" )
     {
-        isoFixed = DateTime.fromMillis( postPostTimestamp * 1000 ).toISO();
+        isoFixed = DateTime.fromMillis( postPostTimestamp * 1000 ).toUTC().toISO();
 
         if ( isoFixed != null && isoFixed != "" )
         {
@@ -133,7 +133,7 @@
             }
         }
     } else if ( postTypePage == "permalink" ) {
-        isoFixed = DateTime.fromMillis( postPostTimestamp * 1000 ).toISO();
+        isoFixed = DateTime.fromMillis( postPostTimestamp * 1000 ).toUTC().toISO();
 
         if ( isoFixed != null && isoFixed != "" )
         {
@@ -167,7 +167,7 @@
     {
         var newDateTime = "";
         $("time[lifeinpoetry-unixdatetime]").each(function() {
-            newDateTime = DateTime.fromMillis( $(this).attr("lifeinpoetry-unixdatetime") * 1000 ).toISO();
+            newDateTime = DateTime.fromMillis( $(this).attr("lifeinpoetry-unixdatetime") * 1000 ).toUTC().toISO();
             $(this).attr("datetime", newDateTime);
         })   
     }
